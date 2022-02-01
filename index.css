@@ -10,6 +10,10 @@ head {
     float: right;
     overflow: hidden;
 }
+.table_menu {
+    width: 100%;
+    border: 1px solid #999;
+}
 .menu_site {
     border: 5px solid #999; 
     overflow: hidden;
@@ -30,7 +34,7 @@ body {
     padding-right: 10px;
     padding-bottom: 10px; 
 }
-.Main {
+.main {
     border: 5px solid #999; 
     padding-top: 10px; 
     padding-left: 10px; 
@@ -41,7 +45,6 @@ body {
 .article {
     border: 3px groove #999;
     background-color: #B0B0B0;
-    display: block;
     padding: 10px;
     width: 250px;
     float: right;
