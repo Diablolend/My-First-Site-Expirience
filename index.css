@@ -9,6 +9,9 @@ aside {
     width: 250px;
     float: right;
 }
+.div {
+    border 1px solid #999
+}
 body {
     font-family: Arial, Verdana, sans-serif, Georgia, Times, serif;
     font-size: 14pt;
