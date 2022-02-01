@@ -1,7 +1,7 @@
 head {
     border: 1px solid #999;
 }
-aside {
+.aside {
     border-style: groove;
     border-color: #808080;
     background-color: #B0B0B0;
@@ -10,7 +10,7 @@ aside {
     float: right;
 }
 .menu_site {
-    border: 1px solid #999
+    border: 5px solid #999; 
 }
 body {
     font-family: Arial, Verdana, sans-serif, Georgia, Times, serif;
@@ -19,15 +19,23 @@ body {
     background-color: #C7C7C7;
     color: #333;
     text-align: justify; 
-    margin-top: 20px;
-    margin-left: 20px; 
-    margin-right: 20px;
-    margin-bottom: 20px; 
-    border: 5px solid #999; 
+    margin-top: 10px;
+    margin-left: 10px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px; 
     padding-left: 10px; 
+    padding-right: 10px;
     padding-bottom: 10px; 
 }
-article {
+.Main {
+    border: 5px solid #999; 
+    padding-top: 10px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+    padding-bottom: 10px; 
+}
+.article {
     border: 3px groove #999;
     background-color: #B0B0B0;
     display: block;
@@ -35,9 +43,9 @@ article {
     width: 250px;
     float: right;
 }
-footer {
+.footer {
     text-align: center;
-    border: 1px solid #999;
+    border: 5px solid #999; 
 }
 h1 { 
     font-size: 150%; 
