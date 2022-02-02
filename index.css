@@ -3,11 +3,13 @@ head {
 }
 header {
     border: 5px solid #999; 
+    background-color: #C7C7C7;
     padding: 10px;
     overflow: hidden;
 }
 .header {
     border: 5px solid #999; 
+    background-color: #C7C7C7;
     padding: 10px;
     overflow: hidden;
 }
@@ -39,10 +41,12 @@ header {
     width: 250px;
 }
 body {
+    background-image: url(image/boomcolor.png);
+    background-size: 100%;
+    background-color: #C7C7C7;
     font-family: Arial, Verdana, sans-serif, Georgia, Times, serif;
     font-size: 14pt;
     font-weight: normal;
-    background-color: #C7C7C7;
     color: #333;
     text-align: justify; 
     margin: 10px;
@@ -50,6 +54,7 @@ body {
 }
 .main {
     border: 5px solid #999; 
+    background-color: #C7C7C7;
     padding-top: 10px; 
     padding-left: 10px; 
     padding-right: 10px;
@@ -63,8 +68,9 @@ body {
     background-color: #dadada;
 }
 .footer {
-    text-align: center;
     border: 5px solid #999; 
+    background-color: #C7C7C7;
+    text-align: center;
     overflow: hidden;
     margin-top: 10px;
 }
