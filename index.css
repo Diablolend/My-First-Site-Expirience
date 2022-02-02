@@ -1,6 +1,11 @@
 head {
     width: 100%;
 }
+header {
+    border: 5px solid #999; 
+    padding: 10px;
+    overflow: hidden;
+}
 .header {
     border: 5px solid #999; 
     padding: 10px;
