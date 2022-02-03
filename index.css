@@ -10,6 +10,9 @@ head {
 .nav {
     float: left;
 }
+.logo_and_name {
+    float: center;
+}
 .login-pass {
     float: right;
 }
