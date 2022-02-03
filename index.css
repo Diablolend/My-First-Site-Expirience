@@ -1,12 +1,6 @@
 head {
     width: 100%;
 }
-header {
-    border: 5px solid #999; 
-    background-color: #C7C7C7;
-    padding: 10px;
-    overflow: hidden;
-}
 .header {
     border: 5px solid #999; 
     background-color: #C7C7C7;
@@ -19,14 +13,14 @@ header {
 .login-pass {
     float: right;
 }
-.sidebar {
+.aside {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     float: right;
     overflow: hidden;
 }
-.aside {
+.sidebar {
     border-style: groove;
     border-color: #808080;
     background-color: #B0B0B0;
