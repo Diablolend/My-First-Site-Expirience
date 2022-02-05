@@ -5,4 +5,4 @@ document.writeln("<tr>");
     document.writeln("<\/tr>");
 }
 document.write ("<\/table> ");
-// alert('Таблица в спойлере создана!')
+/// alert('Таблица в спойлере создана!')
