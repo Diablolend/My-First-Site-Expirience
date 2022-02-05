@@ -1,0 +1,154 @@
+
+<style>
+.back {
+  width: 600px;
+  height: 360px;
+  background: #ccc;
+}
+.abs {
+  position: absolute;
+}
+.block {
+  top: 26px;
+  left: 50px;
+  right: 40px;
+  bottom: 20px;
+  display: none;
+}
+ul.circle {
+  list-style-type:none;
+  top: 284px;
+  left: 98px;
+}
+ul {
+  list-style-type:none;
+  top: 273px;
+  left: 114px;
+}
+li {
+  font-size: 24px;
+  display: inline;
+  padding-right: 36px;
+}
+ul.circle li {
+  border-radius: 30px;
+  background-color: #fff;
+  border: 2px solid #222;
+  font-size: 28px;
+  padding-right: 56px;
+  padding-top: 24px;
+  margin-right: 10px;
+  display: inline;
+}
+a {
+  text-decoration: none;
+  color: #222;
+  margin-right: 20px;
+}
+a:hover {
+  color: #000;
+}
+a:visited {
+  font-weight: bold;
+}
+.tabs {
+  background: #ededed;
+  font-family: monostace;
+  top: 58px;
+  width: 520px;
+  height: 270px;
+}
+.tabs p {
+  top: 16px;
+  font-family: monostace;
+}
+p {
+  font-size: 44px;
+  font-family: monostace;
+  top: 48px;
+  left: 70px;
+  color: #aaa;
+  line-height: 44px;
+}
+#one {
+  display: block;
+}
+div:target {
+  display: block;
+}
+div[id*=tab]:target {
+  display: block;
+}
+div[id*=tab]:target ~ #tab {
+  display: block;
+}
+div[id*=t]:target ~ #one {
+  display: none;
+}
+</style>
+
+<div class="back">
+
+    <div id="tab/three" class="abs tabs block">
+      <p class="abs">
+        &lt;div <span style="color: #444">id="tab/three"</span>&gt;
+        <br />...
+        <br />&lt;/div&gt;
+      </p>
+    </div>
+    
+    <div id="tab/two" class="abs tabs block">
+      <p class="abs">
+        &lt;div <span style="color: #444">id="tab/two"</span>&gt;
+        <br />...
+        <br />&lt;/div&gt;
+      </p></div>
+    
+    <div id="tab/one" class="abs tabs block">
+      <p class="abs">
+        &lt;div <span style="color: #444">id="tab/one"</span>&gt;
+        <br />...
+        <br />&lt;/div&gt;
+      </p></div>
+  
+    <div id="tab" class="abs block">
+      <a href="#one">#one</a>
+      <a href="#two">#two</a>
+      <b><a href="#tab/one">#tab</a></b>
+      
+      <p class="abs" style="font-size: 24px; top: 32px; left: 34px; color: #ccc">
+        &lt;div id="tab"&gt;
+      </p>
+      <p class="abs" style="font-size: 24px; top: 200px; left: 34px; color: #ccc">
+        &lt;div id="tab"&gt;
+      </p>
+      
+      <ul class="circle abs">
+           <a href="#tab/one"><li></li></a><a href="#tab/two"><li></li></a><a href="#tab/three"><li></li></a></ul>
+      <ul class="abs"><a href="#tab/one"><li>3.1</li></a><a href="#tab/two"><li>3.2</li></a><a href="#tab/three"><li>3.3</li></a></ul>
+    </div>
+  
+    <div id="two" class="abs block">
+      <a href="#one">#one</a>
+      <b><a href="#two">#two</a></b>
+      <a href="#tab/one">#tab</a>
+      
+      <p class="abs">
+        &lt;div <span style="color: #fff">id="two"</span>&gt;
+        <br />...
+        <br />&lt;/div&gt;
+      </p>
+    </div>
+  
+    <div id="one" class="abs block">
+      <b><a href="#one">#one</a></b>
+      <a href="#two">#two</a>
+      <a href="#tab/one">#tab</a>
+      <p class="abs">
+        &lt;div <span style="color: #fff">id="one"</span>&gt;
+        <br />...
+        <br />&lt;/div&gt;
+      </p>
+    </div>
+  
+  </div>
