@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https://(www.)?mysite.com/ [nc]
+RewriteRule .*.(gif|jpg|png)$ https://mysite.com/img/goaway.gif[nc]

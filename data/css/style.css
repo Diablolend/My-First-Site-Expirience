@@ -67,7 +67,7 @@ article {
     margin-right: auto;
 }
 body {
-    background: #C7C7C7 url(../images/pic/stars-sparkle.gif) no-repeat center top fixed;
+    background: #C7C7C7 url(data/images/pictures/stars-sparkle.gif) no-repeat center top fixed;
     -moz-background-size: 100% auto;
     -webkit-background-size: 100% auto;
     -o-background-size: 100% auto;
