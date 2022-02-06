@@ -1,3 +1,0 @@
-<IfModule mod_rewrite.c>
-    RewriteRule $ RewriteRule ^index.html reconstruction.html [L,QSA] [R=302,L]
-</IfModule>

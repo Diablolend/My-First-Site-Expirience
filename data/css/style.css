@@ -82,7 +82,7 @@ body {
     padding: 10px;
     overflow-y: scroll;
 }
-.main {
+main {
     border: 5px solid #707070;
     border-radius: 10px;
     background-color: #C7C7C7d7;
