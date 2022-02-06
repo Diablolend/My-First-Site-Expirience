@@ -29,6 +29,14 @@ nav {
     height: auto;
 
 }
+aside {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 200px auto;
+    float: right;
+    overflow: hidden;
+}
 .auth_panel {
     width: 200px auto;
     height: auto;
@@ -38,14 +46,6 @@ nav {
     text-align: center;
     padding: 10px;
     display: inline-block !important;
-}
-aside {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    width: 200px auto;
-    float: right;
-    overflow: hidden;
 }
 .sidebar {
     border: 5px solid #707070;
@@ -63,7 +63,7 @@ article {
     background-color: #c7c7c7d7;
     padding: 10px;
     text-align: center;
-    width: 200px;
+    width: 200px auto;
     margin-right: auto;
 }
 body {
