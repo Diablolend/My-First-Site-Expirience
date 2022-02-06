@@ -68,10 +68,10 @@ article {
 }
 body {
     background: #C7C7C7 url(../images/pictures/stars-sparkle.gif) no-repeat center top fixed;
-    -moz-background-size: 100% auto;
-    -webkit-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: Arial, Verdana, sans-serif, Georgia, Times, serif;
     font-size: 14pt;
     font-weight: normal;
