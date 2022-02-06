@@ -1,5 +1,3 @@
-Options +FollowSymlinks
-RewriteEngine On
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^https://(www.)?mysite.com/ [nc]
-RewriteRule .*.(gif|jpg|png)$ https://mysite.com/img/goaway.gif[nc]
+<IfModule mod_rewrite.c>
+    RewriteRule $ RewriteRule ^index.html reconstruction.html [L,QSA] [R=302,L]
+</IfModule>
