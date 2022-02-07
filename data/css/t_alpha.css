@@ -10,7 +10,7 @@ header {
     background-color: #c7c7c7d7;
     height: auto;
     /* overflow: hidden; */
-    display: inline-block !important;
+    display: inline-block;
     /* margin-right: 10px; */
 }
 .logo {
