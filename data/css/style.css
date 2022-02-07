@@ -2,39 +2,34 @@ head {
     float: none;
 }
 header {
-    float: none;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 .logo-and-nav {
+    float: left;
     border: 5px solid #707070;
     border-radius: 10px;
     background-color: #c7c7c7d7;
+    width: auto;
     height: auto;
     /* overflow: hidden; */
-    display: inline-block !important;
-    /* margin-right: 10px; */
+    display: inline-flex;
+    margin-right: 10px;
 }
 .logo {
-    display: inline-block;
     padding: 10px;
     width: auto;
     height: auto;
 }
 nav {
-    font-size: 110%;
+    font-size: 100% auto;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: #681c23;
-    display: inline-block;
     padding: 10px;
     width: auto;
     height: auto;
-}
-aside {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    width: 200px auto;
-    float: right;
-    overflow: hidden;
 }
 .auth_panel {
     width: 200px auto;
@@ -44,7 +39,14 @@ aside {
     background-color: #c7c7c7d7;
     text-align: center;
     padding: 10px;
-    display: inline-block !important;
+    float: right;
+}
+aside {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 30% auto;
+    float: right;
+    overflow: hidden;
 }
 .sidebar {
     border: 5px solid #707070;
@@ -52,7 +54,7 @@ aside {
     background-color: #c7c7c7d7;
     padding: 10px;
     text-align: center;
-    width: 200px auto;
+    width: auto;
     height: auto;
     margin-bottom: 10px;
 }
@@ -62,7 +64,8 @@ article {
     background-color: #c7c7c7d7;
     padding: 10px;
     text-align: center;
-    width: 200px auto;
+    width: auto;
+    height: 2600px;
     margin-right: auto;
 }
 body {
@@ -85,7 +88,8 @@ main {
     border: 5px solid #707070;
     border-radius: 10px;
     background-color: #C7C7C7d7;
-    width: auto;
+    width: 80% auto;
+    height: 3000px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -100,6 +104,7 @@ footer {
     border-radius: 10px;
     background-color: #c7c7c7d7;
     text-align: center;
+    height: auto;
     overflow: hidden;
 }
 h1 {
@@ -107,4 +112,30 @@ h1 {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     text-shadow: #3b1014 2px -2px 1px;
     color: #681c23;
+}
+a /* Общий формат ссылок */ {
+    text-decoration: none;
+    box-shadow: -2px 3px #606060;
+    border-radius: 10px;
+    border-top: 5px solid #505050;
+    border-right: 5px solid #505050;
+    padding: 3px;
+}
+a:link /* Непосещенная */ {
+    color: inherit; 
+}
+a:visited /* Посещенная */ {
+    color: inherit;
+}
+a:hover /* Не нажатая */ {
+    color: #005eff; 
+    text-shadow: #003694 1px -1px 0px;
+    box-shadow: -2px 3px #606060;
+    border-radius: 10px;
+    border-top: 5px solid #505050;
+    border-right: 5px solid #505050;
+}
+a:active /* Нажатая */ {
+    color: #81adff; 
+    text-shadow: #2f4d86 1px -1px 0px;
 }
