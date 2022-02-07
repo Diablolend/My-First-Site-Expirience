@@ -28,6 +28,24 @@
             /* еще больше контроля с max-width */
             max-width: auto;
         }
+        a:link /* Непосещенная */ {
+            color: inherit; 
+        }
+        a:visited /* Посещенная */ {
+            color: inherit;
+        }
+        a:hover /* Не нажатая */ {
+            color: #005eff; 
+            text-shadow: #003694 1px -1px 0px;
+            box-shadow: -2px 3px #606060;
+            border-radius: 10px;
+            border-top: 5px solid #505050;
+            border-right: 5px solid #505050;
+        }
+        a:active /* Нажатая */ {
+            color: #81adff; 
+            text-shadow: #2f4d86 1px -1px 0px;
+        }
     </style>
 </head>
 <body>
