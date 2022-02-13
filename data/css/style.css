@@ -14,6 +14,12 @@
 
 /* Начало технической части сайта. */
 /* ЗДЕСЬ НИЧЕГО НЕТ. ЗАЧЕМ ЗАДАВАТЬ ФОРМАТ ТОМУ, ЧЕГО НЕТ? Are U Geinius? */
+html {
+    /* Код прокрутки на будущее. Сейчас работает только на mazilla firefox */
+    scrollbar-width: thin;          /* "auto" или "thin"  */
+    scrollbar-color: #505050 black;   /* плашка скролла и дорожка */ 
+}
+
 head {
     width: auto;
 }
@@ -46,21 +52,18 @@ body {
     "header header aside"
     "main main aside"
     "footer footer footer";
-    /* Ниже код прокрутки на будущее. Сейчас работает только на mazilla firefox */
-    scrollbar-width: thin;          /* "auto" или "thin"  */
-    scrollbar-color: #505050 transparent;   /* плашка скролла и дорожка */ 
 }
-/* Это актуальный код прокрутки для всех браузеров, кроме IE и Firefox. */
-body::-webkit-scrollbar {
-    width: 10px; /* ширина scrollbar */
-}
-body::-webkit-scrollbar-track {
-    background: transparent; /* цвет дорожки */
-}
-body::-webkit-scrollbar-thumb {
-    background-color: #505050; /* цвет плашки */
-    border-radius: 20px; /* закругления плашки */
-}
+    /* Это актуальный код прокрутки для всех браузеров, кроме IE и Firefox. */
+    body::-webkit-scrollbar {
+        width: 10px; /* ширина scrollbar */
+    }
+    body::-webkit-scrollbar-track {
+        background: black; /* цвет дорожки */
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #505050; /* цвет плашки */
+        border-radius: 20px; /* закругления плашки */
+    }
 /* КОНЕЦ ОСНОВНОГО ТЕЛА САЙТА. */
 
 /* НАЧАЛО ВЕРХНЕЙ ЧАСТИ САЙТА. */
