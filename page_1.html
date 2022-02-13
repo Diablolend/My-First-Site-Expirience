@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<base target="_blank">
 		<link href="data/images/icons/favicon.ico" rel="icon" type="image/x-icon"/>
-		<link rel="stylesheet" href="data/css/t_alpha.css" />
+		<link rel="stylesheet" href="data/css/style.css" />
 		<script src="data/js/index.js"></script>
 		<script src="data/js/html5shiv.js"></script>
 	</head>
@@ -15,20 +15,35 @@
 		<!-- Это основное тело страницы. -->
 		<header>
 			<!-- Это головной блок. Здесь обычно располагается меню сайта. -->
-			<div class="logo-and-nav">
-				<div class="logo">
-					<a href="index.html" class="logo" style="display: block;" target="_self"><img src="data/images/pictures/logo.png" /></a>
-				</div>
-				<nav>
-					<ul class="nav"></ul>
-						<a href="page_1.html" target="_self">Главная</a> | 
-						<a href="page_2.html" target="_self">HTML5(NS)</a> |
-						<a href="page_3.html" target="_self">Бан(NS)</a> | 
-						<a href="https://github.com/Diablolend/My-First-Site-Expirience">GitHub(Source)</a> 
-					</ul>
-				</nav>
-			</div>
+			<nav>
+				<ul class="ul_nav">
+					<li class="li_logo"><a href="index.html" target="_self"><img src="data/images/pictures/logo.png" /></a></li>
+					<li class="li_nav>"><a href="page_1.html" target="_self">Главная</a></li>
+					<li class="li_nav>"><a href="page_2.html" target="_self">HTML5(NS)</a></li>
+					<li class="li_nav>"><a href="page_3.html" target="_self">Бан(NS)</a></li>
+					<li class="li_nav>"><a href="https://github.com/Diablolend/My-First-Site-Expirience">GitHub(Source)</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h1>Практический сайт</h1>
+			<hr>
+			<p>Приветствую тебя здесь, кто бы ты ни был. Здесь я практикуюсь в веб-программировании(вёрстке) на HTML, CSS и JavaScript.</p>
+			<hr>
+			<p><b>Проектики:</b></p>
+			<details>
+			<summary>Просто спойлер</summary>
+			<script src="data/js/gentable.js"></script>
+			</details>
+			<br>
+			<textarea rows="10" cols="100" class="some_textbox" placeholder="Напиши что-нибудь. Это никто не узнает. Честно."></textarea>
+		</main>
+
+		<aside>
+			<!-- Это боковая панель. Но нуждается в форматировании. ^_^ -->
 			<div class="auth_panel">
+				<!-- Панель для авторизации на сайте. -->
 				<p><b>Авторизация</b></p>
 				<hr>
 				<p>Вы не вошли.</p>
@@ -37,10 +52,6 @@
 				<br>
 				<input type="submit" value="Войти" />
 			</div>
-		</header>
-
-		<aside>
-			<!-- Это боковая панель. Но нуждается в форматировании. ^_^ -->
 			<div class="sidebar">
 				<!-- Это боковая панель для ссылочек. ^_^ -->
 				<p><b>Ссылки</b></p>
@@ -58,27 +69,12 @@
 			</article>
 		</aside>
 
-		<main>
-			<h1>Практический сайт</h1>
-			<hr>
-			<p>Приветствую тебя здесь, кто бы ты ни был. Здесь я практикуюсь в веб-программировании(вёрстке) на HTML, CSS и JavaScript.</p>
-			<hr>
-			<p><b>Проектики:</b></p>
-			<details>
-			<summary>Просто спойлер</summary>
-			<script src="data/js/gentable.js"></script>
-			</details>
-			<br>
-			<textarea rows="10" cols="100" class="some_textbox" placeholder="Напиши что-нибудь. Это никто не узнает. Честно."></textarea>
-		</main>
-
 		<footer>
 			<!-- Подвальное тело. Нужно для копирайтов, правил и прочего. -->
 			<div class="site_author"></div>
-				<p><b>© Diablolend, 2022.</b>
+				<p><b>© Diablolend, 2022.</b><br><br>
 				<a href="mailto:diablolend@gmail.com">Написать мне</a></p>
 			</div>
 		</footer>
-
 	</body>
 </html>
