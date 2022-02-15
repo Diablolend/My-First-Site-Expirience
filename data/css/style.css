@@ -17,7 +17,7 @@
 html {
     /* Код прокрутки на будущее. Сейчас работает только на mazilla firefox */
     scrollbar-width: thin;          /* "auto" или "thin"  */
-    scrollbar-color: #505050 black;   /* плашка скролла и дорожка */ 
+    scrollbar-color: #505050 transparent;   /* плашка скролла и дорожка */ 
 }
 
 head {
@@ -33,7 +33,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14pt;
+    font-size: 1.5vw;
     font-weight: normal;
     text-shadow: #464646 1px -1px 0px;
     color: #333333;
@@ -52,13 +52,14 @@ body {
     "header header aside"
     "main main aside"
     "footer footer footer";
+    overflow: overlay;
 }
     /* Это актуальный код прокрутки для всех браузеров, кроме IE и Firefox. */
     body::-webkit-scrollbar {
         width: 10px; /* ширина scrollbar */
     }
     body::-webkit-scrollbar-track {
-        background: black; /* цвет дорожки */
+        background: transparent; /* цвет дорожки */
     }
     body::-webkit-scrollbar-thumb {
         background-color: #505050; /* цвет плашки */
@@ -122,6 +123,12 @@ nav {
 /* КОНЕЦ ВЕРХНЕЙ ЧАСТИ САЙТА. */
 
 /* НАЧАЛО ОСНОВНОГО БЛОКА САЙТА. */
+body > main {
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
 main {
     grid-area: main;
     border-top: 6px solid #505050;
@@ -137,8 +144,14 @@ main {
     margin-right: 10px;
     overflow: hidden;
 }
+main:hover {
+    box-shadow: inset 0 0 0 23px #53ea93;
+}
 .some_textbox {
     background-color: #dadada;
+    width: 20%;
+    max-width: 99%;
+    font-size: 1.5vw;
 }
 /* КОНЕЦ ОСНОВНОГО БЛОКА САЙТА. */
 
@@ -213,6 +226,8 @@ h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-shadow: #3b1014 2px -2px 1px;
     color: #681c23;
+    margin: 0;
+    padding: 0;
 }
 input {
     text-align: center;
@@ -225,7 +240,7 @@ a /* Общий формат ссылок */ {
     border-top: 4px solid #505050;
     border-right: 4px solid #505050;
     background-color: #70707044;
-    padding: 4px;
+    padding: 8px;
 }
 a:link /* Непосещенная */ {
     color: inherit; 
@@ -233,15 +248,15 @@ a:link /* Непосещенная */ {
 a:visited /* Посещенная */ {
     color: inherit;
 }
-a:hover /* Не нажатая */ {
+a:hover /* При наведении. Не нажатая */ {
     color: #005eff; 
     text-shadow: #003694 1px -1px 0px;
     box-shadow: -1px 2px #606060;
     border-radius: 10px;
-    border-top: 4px solid #505050;
-    border-right: 4px solid #505050;
+    border-top: 2px solid #505050;
+    border-right: 2px solid #505050;
 }
-a:active /* Нажатая */ {
+a:active /* При наведении. Нажатая */ {
     color: #81adff; 
     text-shadow: #2f4d86 1px -1px 0px;
 }
