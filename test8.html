@@ -1,0 +1,33 @@
+
+<head>
+<style>
+    .container {  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header aside"
+    "main aside"
+    "footer footer";
+}
+
+.header { grid-area: header; border: 3px solid; }
+
+.aside { grid-area: aside; border: 3px solid; }
+
+.main { grid-area: main; border: 3px solid; }
+
+.footer { grid-area: footer; border: 3px solid; }
+
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">header</div>
+    <div class="aside">aside</div>
+    <div class="main">main</div>
+    <div class="footer">footer</div>
+  </div>
+</body>
