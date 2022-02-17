@@ -1,33 +1,21 @@
+<iframe id="github-iframe" src=""></iframe>
+<script>
+    fetch('https://api.github.com/repos/ileathan/hubot-mubot/contents/src/mubot.coffee')
+        .then(function(response) {
+            return response.json();
+        }).then(function(data) {
+            var iframe = document.getElementById('github-iframe');
+            iframe.src = 'data:text/html;base64,' + encodeURIComponent(data['content']);
+        });
+</script>
 
-<head>
-<style>
-    .container {  display: grid;
-  grid-template-columns: 1.5fr 0.5fr;
-  grid-template-rows: 0.5fr 2fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header aside"
-    "main aside"
-    "footer footer";
+<iframe frameborder=0 style="min-width: 200px; width: 60%; height: 460px;" scrolling="no" seamless="seamless" srcdoc='<html><body><style type="text/css">.gist .gist-data { height: 400px; }</style><script src="https://github.com/Diablolend/My-First-Site-Expirience/commits/master"></script></body></html>'></iframe> 
+
+<iframe src="https://github.com"></iframe>
+
+<script src="https://unpkg.com/[email protected]" data-selector="code"></script>
+<code>
+fun main() {
+   println("Hello world")
 }
-
-.header { grid-area: header; border: 3px solid; }
-
-.aside { grid-area: aside; border: 3px solid; }
-
-.main { grid-area: main; border: 3px solid; }
-
-.footer { grid-area: footer; border: 3px solid; }
-
-</style>
-</head>
-
-<body>
-<div class="container">
-    <div class="header">header</div>
-    <div class="aside">aside</div>
-    <div class="main">main</div>
-    <div class="footer">footer</div>
-  </div>
-</body>
+</code>

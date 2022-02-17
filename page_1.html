@@ -7,6 +7,7 @@
 		<base target="_blank">
 		<link href="data/images/icons/favicon.ico" rel="icon" type="image/x-icon"/>
 		<!-- <link rel="stylesheet" href="data/css/reset.css"/> -->
+		<link rel="import" href="https://github.com/Diablolend/My-First-Site-Expirience/commits/master">
 		<link rel="stylesheet" href="data/css/style.css"/>
 		<script src="data/js/index.js"></script>
 		<script src="data/js/html5shiv.js"></script>
@@ -68,6 +69,10 @@
 				<p><b>Новости</b></p>
 				<hr>
 				<p>Всё стабильно.</p>
+				<?
+					$content = file_get_contents('commits.php');
+					echo $content;
+				?>
 			</article>
 		</aside>
 
