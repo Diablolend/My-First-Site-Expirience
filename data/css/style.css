@@ -42,11 +42,11 @@ body {
     padding: 10px;
     overflow-y: scroll;
     width: 100%;
-    max-width: 1400px;
-    height: 100%;
+    max-width: 1400px !important;
+    height: 100% !important;
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 100px 2fr 100px;
+    grid-template-rows: 120px 2fr 120px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -97,9 +97,11 @@ ul.ul_nav li {
 }
 li.li_logo {
     padding: 10px;
+    width: 90px;
 }
 li.li_logo img {
     height: 100%;
+    margin: auto;
 }
 li.li_logo a {
     border: none;
@@ -123,10 +125,17 @@ nav {
     width: 100%;
     margin-right: 10px;
     margin-bottom: 10px;
-    font-size: 100%;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    color: #681c23;
     padding: 1px;
+}
+.text_nav {
+    font-size: 120%;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.description_nav {
+    font-size: 80%;
+    line-height: 16px;
+    text-align: center;
 }
 /* КОНЕЦ ВЕРХНЕЙ ЧАСТИ САЙТА. */
 
@@ -157,7 +166,7 @@ main {
     background-color: #dadada;
     min-width: 99%;
     max-width: 99%;
-    min-height: 30%;
+    min-height: 10%;
     font-size: 14px;
 }
 /* КОНЕЦ ОСНОВНОГО БЛОКА САЙТА. */

@@ -4,6 +4,7 @@
 	<head>
 		<title>First HTML expierience</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<base target="_blank">
 		<link href="data/images/icons/favicon.ico" rel="icon" type="image/x-icon"/>
 		<!-- <link rel="stylesheet" href="data/css/reset.css"/> -->
@@ -19,11 +20,23 @@
 			<!-- Это головной блок. Здесь обычно располагается меню сайта. -->
 			<nav>
 				<ul class="ul_nav">
-					<li class="li_logo"><a href="index.html" target="_self"><img src="data/images/pictures/logo.png" /></a></li>
-					<li class="li_nav>"><a href="page_1.html" target="_self">Главная</a></li>
-					<li class="li_nav>"><a href="page_2.html" target="_self">HTML5(NS)</a></li>
-					<li class="li_nav>"><a href="page_3.html" target="_self">Бан(NS)</a></li>
-					<li class="li_nav>"><a href="https://github.com/Diablolend/My-First-Site-Expirience">GitHub(Source)</a></li>
+					<li class="li_logo" title="Посмотреть на предупредительную страницу"><a href="index.html" target="_self"><img src="data/images/icons/HTML5_logo_and_wordmark.svg"/></a></li>
+					<li class="li_nav>" title="Первая и главная страница сайта"><a href="page_1.html" target="_self">
+						<span class="text_nav">Главная</span><br>
+						<span class="description_nav">Обо мне</span>
+					</a></li>
+					<li class="li_nav>" title="Вторая страница сайта"><a href="page_2.html" target="_self">
+						<span class="text_nav">Проектики</span><br>
+						<span class="description_nav">Моё творчество</span>
+					</a></li>
+					<li class="li_nav>" title="Третья страница сайта"><a href="page_3.html" target="_self">
+						<span class="text_nav">Получить бан</span><br>
+						<span class="description_nav">Не поддерживается</span>
+					</a></li>
+					<li class="li_nav>" title="Взглянуть на исходники этого сайта"><a href="https://github.com/Diablolend/My-First-Site-Expirience">
+						<span class="text_nav">GitHub</span><br>
+						<span class="description_nav">Исходный код сайта</span>
+					</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -52,16 +65,16 @@
 				<input name="имя" type="text" value="имя пользователя" /><br>
 				<input name="пароль" type="password" value="пароль" /><br>
 				<input type="submit" onclick="alert('Вийди отсюда, розбийник.');" value="Войти" />
-				<input type="submit" onClick="window.location.href='register.html'" value="Регистрация" />
+				<input type="submit" onClick="window.location.href='register.html'" value="Регистрация" /><br>
 				<input type="submit" onClick="window.location.href='forgot.html'" value="Забыли данные?" />
 			</div>
 			<div class="sidebar">
 				<!-- Это боковая панель для ссылочек. ^_^ -->
 				<p><b>Ссылки</b></p>
 				<hr>
-				<p><a href="https://vk.com/diablolend" >Мой ВКонтакте</a></p>
-				<p><a href="https://steamcommunity.com/id/diablolend/" >Стимчанский</a></p>
-				<p><a href="https://discord.gg/aNBSxZE" >Канал Дискорд</a></p>
+				<p><a href="https://vk.com/diablolend">Мой ВКонтакте</a></p><br>
+				<p><a href="https://steamcommunity.com/id/diablolend/">Стимчанский</a></p><br>
+				<p><a href="https://discord.gg/aNBSxZE">Канал Дискорд</a></p><br>
 			</div>
 			<article>
 				<!-- Это новостное блок. Нужен для новостей. -->
@@ -69,10 +82,7 @@
 				<p><b>Новости</b></p>
 				<hr>
 				<p>Всё стабильно.</p>
-				<?
-					$content = file_get_contents('commits.php');
-					echo $content;
-				?>
+				<iframe src="https://canary.discord.com/widget?id=193842199480369152&theme=dark" width="250" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 			</article>
 		</aside>
 
