@@ -41,7 +41,7 @@ body {
     margin: 10px auto;
     padding: 10px;
     overflow-y: scroll;
-    width: 1400px !important;
+    width: 1200px !important;
     height: 100% !important;
     display: grid;
     grid-template-columns: 80% 20%;
@@ -93,6 +93,7 @@ ul.ul_nav li {
     text-align: center;
     padding: 3px;
     margin-right: 5px;
+    align-items: center;
 }
 li.li_logo {
     padding: 10px;
@@ -129,7 +130,6 @@ nav {
 .text_nav {
     font-size: 120%;
     line-height: 32px;
-    text-transform: uppercase;
 }
 .description_nav {
     font-size: 80%;
@@ -260,14 +260,26 @@ a:link /* Непосещенная */ {
 a:visited /* Посещенная */ {
     color: inherit;
 }
-a:hover /* При наведении. Не нажатая */ {
+a:hover {
+    box-shadow:
+        7px 7px #53ea93,
+        6px 6px #53ea93,
+        5px 5px #53ea93,
+        4px 4px #53ea93,
+        3px 3px #53ea93,
+        2px 2px #53ea93,
+        1px 1px #53ea93;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }
+/* a:hover При наведении. Не нажатая {
     color: #005eff; 
     text-shadow: #003694 1px -1px 0px;
     box-shadow: -1px 2px #606060;
     border-radius: 10px;
     border-top: 4px solid #505050;
     border-right: 4px solid #505050;
-}
+} */
 a:active /* При наведении. Нажатая */ {
     color: #81adff; 
     text-shadow: #2f4d86 1px -1px 0px;
