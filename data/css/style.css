@@ -41,8 +41,7 @@ body {
     margin: 10px auto;
     padding: 10px;
     overflow-y: scroll;
-    width: 100%;
-    max-width: 1400px !important;
+    width: 1400px !important;
     height: 100% !important;
     display: grid;
     grid-template-columns: 80% 20%;
