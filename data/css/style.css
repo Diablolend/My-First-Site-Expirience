@@ -26,6 +26,12 @@ head {
 /* КОНЕЦ ТЕХНИЧЕСКОЙ ЧАСТИ САЙТА. */
 
 /* НАЧАЛО ОСНОВНОГО ТЕЛА САЙТА. */
+body > a {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 body {
     background: #C7C7C7 url(../images/pictures/stars-sparkle.gif) no-repeat center top fixed;
     -moz-background-size: cover;
@@ -139,12 +145,6 @@ nav {
 /* КОНЕЦ ВЕРХНЕЙ ЧАСТИ САЙТА. */
 
 /* НАЧАЛО ОСНОВНОГО БЛОКА САЙТА. */
-body > main {
-    -webkit-transition: all 0.3s ease;;
-    -moz-transition: all 0.3s ease;;
-    -o-transition: all 0.3s ease;;
-    transition: all 0.3s ease;
-}
 main {
     grid-area: main;
     border-top: 6px solid #505050;
@@ -247,12 +247,21 @@ input {
 }
 a /* Общий формат ссылок */ {
     text-decoration: none;
-    box-shadow: -1px 2px #606060;
+    /* box-shadow: -1px 2px #606060; */
     border-radius: 10px;
-    border-top: 4px solid #505050;
-    border-right: 4px solid #505050;
+    border-bottom: 2px solid #606060;
+    border-left: 2px solid #606060;
     background-color: #70707044;
     padding: 8px;
+    box-shadow:
+    4px -4px #505050,
+    3px -3px #505050,
+    2px -2px #505050,
+    1px -1px #505050;
+    -webkit-transform: translateX(-0px);
+    transform: translateX(-0px);
+    -webkit-transform: translateY(-0px);
+    transform: translateY(-0px);
 }
 a:link /* Непосещенная */ {
     color: inherit; 
@@ -260,26 +269,18 @@ a:link /* Непосещенная */ {
 a:visited /* Посещенная */ {
     color: inherit;
 }
-a:hover {
-    box-shadow:
-        7px 7px #53ea93,
-        6px 6px #53ea93,
-        5px 5px #53ea93,
-        4px 4px #53ea93,
-        3px 3px #53ea93,
-        2px 2px #53ea93,
-        1px 1px #53ea93;
-    -webkit-transform: translateX(-7px);
-    transform: translateX(-7px);
-  }
-/* a:hover При наведении. Не нажатая {
+a:hover /*При наведении. Не нажатая.*/ {
     color: #005eff; 
     text-shadow: #003694 1px -1px 0px;
-    box-shadow: -1px 2px #606060;
     border-radius: 10px;
-    border-top: 4px solid #505050;
-    border-right: 4px solid #505050;
-} */
+    border-bottom: 2px solid #606060;
+    border-left: 2px solid #606060;
+    box-shadow:
+    2px -2px #505050,
+    1px -1px #505050;
+    -webkit-transform: translateX(2px) translateY(-2px);
+    transform: translateX(2px) translateY(-2px);
+}
 a:active /* При наведении. Нажатая */ {
     color: #81adff; 
     text-shadow: #2f4d86 1px -1px 0px;
