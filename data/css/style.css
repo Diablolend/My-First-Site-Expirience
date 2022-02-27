@@ -85,6 +85,7 @@ ul.ul_nav {
     list-style: none;
     margin: 0;
     padding: 4px;
+    align-items: center;
 }
 ul.ul_nav li {
     display: flex;
@@ -93,26 +94,24 @@ ul.ul_nav li {
     text-align: center;
     padding: 3px;
     margin-right: 5px;
-    align-items: center;
 }
 li.li_logo {
-    width: 90px;
+    width: 10%;
     padding: 10px;
 }
 li.li_logo img {
-    height: 100%;
-    margin: auto;
+    height: auto;
+}
+li.li_logo img:hover {
+    opacity: 0.8;
 }
 li.li_logo a {
     border: none;
     box-shadow: none;
     background: none;
+    transform: none;
     width: 100%;
-    height: 80%;
-}
-
-li.li_logo a:hover {
-    background-color: rgba(0, 0, 0, 0.185);
+    height: auto;
 }
 nav {
     border-top: 6px solid #505050;
