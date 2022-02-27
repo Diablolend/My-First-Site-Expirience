@@ -26,12 +26,6 @@ head {
 /* КОНЕЦ ТЕХНИЧЕСКОЙ ЧАСТИ САЙТА. */
 
 /* НАЧАЛО ОСНОВНОГО ТЕЛА САЙТА. */
-body > a {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
 body {
     background: #C7C7C7 url(../images/pictures/stars-sparkle.gif) no-repeat center top fixed;
     -moz-background-size: cover;
@@ -87,7 +81,7 @@ header {
 ul.ul_nav {
     display: flex;
     flex-direction: row;
-    height: 90%;;
+    height: 100%;
     list-style: none;
     margin: 0;
     padding: 4px;
@@ -102,8 +96,8 @@ ul.ul_nav li {
     align-items: center;
 }
 li.li_logo {
-    padding: 10px;
     width: 90px;
+    padding: 10px;
 }
 li.li_logo img {
     height: 100%;
@@ -234,7 +228,7 @@ footer {
     src: url("../fonts/cyrillic_pixel-7.ttf");
 }
 h1 {
-    font-size: 18px;
+    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: #3b1014 1px -1px 0px;
     color: #681c23;
@@ -262,6 +256,7 @@ a /* Общий формат ссылок */ {
     transform: translateX(-0px);
     -webkit-transform: translateY(-0px);
     transform: translateY(-0px);
+    transition: all 0.3s ease;
 }
 a:link /* Непосещенная */ {
     color: inherit; 
@@ -270,8 +265,8 @@ a:visited /* Посещенная */ {
     color: inherit;
 }
 a:hover /*При наведении. Не нажатая.*/ {
-    color: #005eff; 
-    text-shadow: #003694 1px -1px 0px;
+    /* color: #005eff; 
+    text-shadow: #003694 1px -1px 0px; */
     border-radius: 10px;
     border-bottom: 2px solid #606060;
     border-left: 2px solid #606060;
@@ -282,7 +277,12 @@ a:hover /*При наведении. Не нажатая.*/ {
     transform: translateX(2px) translateY(-2px);
 }
 a:active /* При наведении. Нажатая */ {
-    color: #81adff; 
-    text-shadow: #2f4d86 1px -1px 0px;
+    /* color: #81adff; 
+    text-shadow: #2f4d86 1px -1px 0px; */
+    box-shadow:
+    2px -2px #505050,
+    1px -1px #505050;
+    -webkit-transform: translateX(2px) translateY(-2px);
+    transform: translateX(2px) translateY(-2px);
 }
 /* КОНЕЦ СТИЛЕЙ ОТДЕЛЬНЫХ ЭЛЕМЕНТОВ. */

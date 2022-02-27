@@ -21,7 +21,7 @@
 			<!-- Это головной блок. Здесь обычно располагается меню сайта. -->
 			<nav>
 				<ul class="ul_nav">
-					<li class="li_logo" title="Посмотреть на предупредительную страницу"><a href="index.html" target="_self"><img src="data/images/icons/HTML5_logo_and_wordmark.svg"/></a></li>
+					<li class="li_logo" title="Посмотреть на предупредительную страницу"><a class="logosite" href="index.html" target="_self"><img src="data/images/icons/HTML5_logo_and_wordmark.svg"/></a></li>
 					<li class="li_nav>" title="Первая и главная страница сайта"><a href="page_1.html" target="_self">
 						<span class="text_nav">Главная</span><br>
 						<span class="description_nav">Обо мне</span>
@@ -63,8 +63,8 @@
 				<p><b>Авторизация</b></p>
 				<hr>
 				<p>Вы не вошли.</p>
-				<input name="имя" type="text" value="имя пользователя" /><br>
-				<input name="пароль" type="password" value="пароль" /><br>
+				<input name="имя" type="text" placeholder="Имя пользователя" /><br>
+				<input name="пароль" type="password" placeholder="Пароль" /><br>
 				<input type="submit" onclick="alert('Вийди отсюда, розбийник.');" value="Войти" />
 				<input type="submit" onClick="window.location.href='register.html'" value="Регистрация" /><br>
 				<input type="submit" onClick="window.location.href='forgot.html'" value="Забыли данные?" />
