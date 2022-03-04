@@ -234,6 +234,29 @@ footer {
 }
 /* КОНЕЦ ПОДВАЛЬНОГО БЛОКА САЙТА. */
 
+/* НАЧАЛО КНОПКИ ВВЕРХ. */
+.up {
+    display:inline-block;
+    position: fixed;
+    bottom: 70px;
+    right: 85px;
+}
+.up-down a {
+    opacity: 0.5;
+    background-color: #c7c7c7d7;
+}
+.up-down a:hover {
+    opacity: 1;
+    background-color: #c7c7c7d7;
+}
+.down {
+    display:inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 85px;
+}
+/* КОНЕЦ КНОПКИ ВВЕРХ. */
+
 /* НАЧАЛО СТИЛЕЙ ОТДЕЛЬНЫХ ЭЛЕМЕНТОВ. */
 @font-face {
     font-family: 'PERSONAL_FONT';
