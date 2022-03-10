@@ -1,0 +1,46 @@
+<script>
+    function showTab(tabs, tab){
+    var links = tabs.querySelectorAll(".my-tabs-link > a")
+    links.forEach(function(link) {
+        console.log(link.getAttribute("href"))
+        document.querySelector(link.getAttribute("href")).style.display = 'none';
+    });
+    document.querySelector(tab.getAttribute("href")).style.display = 'block';
+}
+
+document.addEventListener('DOMContentLoaded', function(){ 
+    var my_tabs_array = document.querySelectorAll(".my-tabs");
+    
+    my_tabs_array.forEach(function(tabs) {
+        var links = tabs.querySelectorAll(".my-tabs-link > a")
+        links.forEach(function(link) {
+            link.addEventListener("click", function(event){
+                showTab(tabs, this)
+                event.preventDefault()
+            });
+        });
+    });
+});
+</script>
+
+<nav>
+    <ul class="ul_nav my-tabs">
+        <li class="li_logo" title="Логотип сайта и переход к предупредительной странице"><a href="index.html" target="_self"><img src="data/images/icons/HTML5_logo_and_wordmark.svg"/></a></li>
+        <li class="li_nav my-tabs-link" title="Первая вкладка. Расскажет обо мне."><a href="#main_one" target="_self">
+            <span class="text_nav">Главная</span><br>
+            <span class="description_nav">Обо мне</span>
+        </a></li>
+        <li class="li_nav my-tabs-link" title="Вторая вкладка. Здесь я делаю мини и просто проекты вперемешку с практикой."><a href="#main_two" target="_self">
+            <span class="text_nav">Проектики</span><br>
+            <span class="description_nav">Моё творчество</span>
+        </a></li>
+        <li class="li_nav my-tabs-link" title="Хочешь бан? Жми!"><a href="#main_three" target="_self">
+            <span class="text_nav">Получить бан</span><br>
+            <span class="description_nav">Навсегда</span>
+        </a></li>
+        <li class="li_nav" title="Взглянуть на исходники этого сайта"><a href="https://github.com/Diablolend/My-First-Site-Expirience">
+            <span class="text_nav">GitHub</span><br>
+            <span class="description_nav">Исходный код сайта</span>
+        </a></li>
+    </ul>
+</nav>
