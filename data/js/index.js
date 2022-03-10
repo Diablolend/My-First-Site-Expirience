@@ -5,13 +5,13 @@
 // Плавные анимации для кнопок скролла вверх и вниз.
 function ScrollUp(){
     var t,s;
-    s=document.body.scrollTop||window.pageYOffset;
+    s=document.documentElement.scrollTop||window.pageYOffset;
     t=setInterval(function(){if(s>0)window.scroll(0,s-=5);else clearInterval(t)},5);
 }
 function ScrollDown(){
     var t,s;
-    s=document.body.scrollTop||window.pageYOffset;
-    t=setInterval(function(){if(s>=0)window.scroll(0,s+=5);else clearInterval(t)},5);
+    s=document.documentElement.scrollTop||window.pageYOffset;
+    t=setInterval(function(){if(s<document.documentElement.scrollHeight-document.documentElement.clientHeight)window.scroll(0,s+=5);else clearInterval(t)},5);
 }
 
 // Замена css tabs. Jeb mosniy. Переключает вкладки без отдельных страниц.
