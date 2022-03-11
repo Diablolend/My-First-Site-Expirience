@@ -27,7 +27,7 @@ head {
 
 /* НАЧАЛО ОСНОВНОГО ТЕЛА САЙТА. */
 body {
-    background: black url(../images/background/outerspace-72.gif) no-repeat;
+    background: black url(../images/pictures/background/outerspace-72.gif) no-repeat;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
