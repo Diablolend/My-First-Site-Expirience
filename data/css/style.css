@@ -28,10 +28,10 @@ head {
 /* НАЧАЛО ОСНОВНОГО ТЕЛА САЙТА. */
 body {
     background: #C7C7C7 url(../images/pictures/stars.gif) no-repeat center top fixed;
-    /* -moz-background-size: cover;
+    -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
+    background-size: cover;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: normal;
