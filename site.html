@@ -4,7 +4,6 @@
 	<head>
 		<title>First HTML expierience</title>
 		<meta charset="utf-8">
-		<!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
 		<meta name="viewport" content="initial-scale=0.0, maximum-scale=1.0">
 		<base target="_blank">
 		<link href="data/images/icons/favicon.ico" rel="icon" type="image/x-icon"/>
@@ -15,10 +14,10 @@
 		<script src="data/js/html5shiv.js"></script>
 	</head>
 
+	<!-- Это основное тело страницы. -->
 	<body>
-		<!-- Это основное тело страницы. -->
+		<!-- Это головной блок. Здесь обычно располагается меню сайта. -->
 		<header>
-			<!-- Это головной блок. Здесь обычно располагается меню сайта. -->
 			<nav>
 				<ul class="ul_nav my-tabs">
 					<li class="li_logo" title="Логотип сайта и переход к предупредительной странице"><a href="index.html" target="_self"><img src="data/images/icons/HTML5_logo_and_wordmark.svg"/></a></li>
@@ -42,19 +41,20 @@
 			</nav>
 		</header>
 
+		<!-- Третья вкладка. Пока не придумал для чего. -->
         <main id="main_three">
-            <h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1>
-            <div class="testing">
-                <article>
-                    <p><time>1957-10-04</time> запущен первый искусственный спутник Земли.</p>
-                    <p><time>1960-08-19</time> первый полет собак в космос.</p>
-                    <p><time>1961-04-12</time> первый полет человека в космос.</p>
-                    <p><time>1963-06-16</time> первый полет женщины-космонавта.</p>
-                    <p><time>1969-07-21</time> высадка человека на Луну.</p>
-                </article>
-            </div>
+            <h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
+			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
+			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
+			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
+			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
+			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
+			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
+			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
+			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1>
         </main>
 
+		<!-- Вторая вкладка. Для проектов. -->
 		<main id="main_two">
 			<h1>Мои Проектики</h1>
 			<hr>
@@ -69,6 +69,7 @@
             </details>
 		</main>
 
+		<!-- Первая вкладка. Обо мне и сайте. -->
 		<main id="main_one" style="display: block;">
 			<h1>Практический сайт</h1>
 			<hr>
@@ -76,10 +77,10 @@
 			<hr>
 		</main>
 
+		<!-- Это боковая панель. Но нуждается в форматировании. ^_^ -->
 		<aside>
-			<!-- Это боковая панель. Но нуждается в форматировании. ^_^ -->
+			<!-- Панель для авторизации на сайте. -->
 			<div class="auth_panel">
-				<!-- Панель для авторизации на сайте. -->
 				<p><b>Авторизация</b></p>
 				<hr>
 				<p>Вы не вошли.</p>
@@ -89,16 +90,16 @@
 				<input type="submit" onClick="window.location.href='register.html'" value="Регистрация" /><br>
 				<input type="submit" onClick="window.location.href='forgot.html'" value="Забыли данные?" />
 			</div>
+			<!-- Это боковая панель для ссылочек. ^_^ -->
 			<div class="sidebar">
-				<!-- Это боковая панель для ссылочек. ^_^ -->
 				<p><b>Ссылки</b></p>
 				<hr>
 				<p><a href="https://vk.com/diablolend">Мой ВКонтакте</a></p>
 				<p><a href="https://steamcommunity.com/id/diablolend/">Стимчанский</a></p>
 				<p><a href="https://discord.gg/aNBSxZE">Канал Дискорд</a></p>
 			</div>
+			<!-- Это новостное блок. Нужен для новостей. -->
 			<article>
-				<!-- Это новостное блок. Нужен для новостей. -->
 				<time></time>
 				<p><b>Новости</b></p>
 				<hr>
@@ -107,16 +108,17 @@
 			</article>
 		</aside>
 
+		<!-- Подвальное тело. Нужно для копирайтов, правил и прочего. -->
 		<footer>
-			<!-- Подвальное тело. Нужно для копирайтов, правил и прочего. -->
 				<p><b>© Diablolend, 2022.</b></p>
 				<p><a href="mailto:diablolend@gmail.com">Написать мне</a></p>
 		</footer>
 
+		<!-- Кнопки вверх и вниз. -->
 		<div class="up-down">
-			<!-- Кнопки вверх и вниз. -->
-			<span class="up"><a href="#" target="_self" onClick="ScrollUp();">↑</a></span>
-			<span class="down"><a href="#" target="_self" onclick="ScrollDown();">↓</a></span>
+			<span class="up"><a onClick="ScrollUp();" style="user-select: none;">↑</a></span>
+			<span class="down"><a onclick="ScrollDown();" style="user-select: none;">↓</a></span>
 		</div>
+
 	</body>
 </html>
