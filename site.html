@@ -81,7 +81,7 @@
 		<aside>
 			<!-- Панель для авторизации на сайте. -->
 			<div class="auth_panel">
-				<p><b>Авторизация</b></p>
+				<p class="block_head"><b>Авторизация</b></p>
 				<hr>
 				<p>Вы не вошли.</p>
 				<input name="имя" type="text" placeholder="Имя пользователя" /><br>
@@ -92,16 +92,18 @@
 			</div>
 			<!-- Это боковая панель для ссылочек. ^_^ -->
 			<div class="sidebar">
-				<p><b>Ссылки</b></p>
+				<p class="block_head"><b>Ссылки</b></p>
 				<hr>
-				<p><a href="https://vk.com/diablolend">Мой ВКонтакте</a></p>
-				<p><a href="https://steamcommunity.com/id/diablolend/">Стимчанский</a></p>
-				<p><a href="https://discord.gg/aNBSxZE">Канал Дискорд</a></p>
+				<div class="return_anim">
+				<a href="https://vk.com/diablolend">Мой ВКонтакте</a><br>
+				<a href="https://steamcommunity.com/id/diablolend/">Стимчанский</a><br>
+				<a href="https://discord.gg/aNBSxZE">Канал Дискорд</a>
+				</div>
 			</div>
 			<!-- Это новостное блок. Нужен для новостей. -->
 			<article>
 				<time></time>
-				<p><b>Новости</b></p>
+				<p class="block_head"><b>Новости</b></p>
 				<hr>
 				<p>Всё стабильно.</p>
 				<iframe src="https://canary.discord.com/widget?id=193842199480369152&theme=dark" width="210" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
@@ -110,8 +112,10 @@
 
 		<!-- Подвальное тело. Нужно для копирайтов, правил и прочего. -->
 		<footer>
-				<p><b>© Diablolend, 2022.</b></p>
-				<p><a href="mailto:diablolend@gmail.com">Написать мне</a></p>
+			<div class="return_anim">
+				<a href="mailto:diablolend@gmail.com">Написать мне</a>
+			</div>
+			<p><b>© Diablolend, 2022.</b></p>
 		</footer>
 
 		<!-- Кнопки вверх и вниз. -->

@@ -159,6 +159,15 @@ main {
     min-height: 10%;
     font-size: 14px;
 }
+div.return_anim {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+div.return_anim a {
+    margin: 5px;
+}
 /* КОНЕЦ ОСНОВНОГО БЛОКА САЙТА. */
 
 /* НАЧАЛО БОКОВОЙ ЧАСТИ САЙТА. */
@@ -214,7 +223,8 @@ footer {
     border-radius: 10px;
     background-color: #c7c7c7d7;
     text-align: center;
-    height: 100%;
+    height: auto;
+    padding-top: 10px;
     overflow: hidden;
 }
 /* КОНЕЦ ПОДВАЛЬНОГО БЛОКА САЙТА. */
@@ -254,6 +264,9 @@ h1 {
     color: #681c23;
     margin: 0;
     padding: 0;
+}
+p.block_head {
+    margin: 0;
 }
 input {
     text-align: center;
