@@ -22,19 +22,19 @@
 				<ul class="ul_nav my-tabs">
 					<li class="li_logo" title="Логотип сайта и переход к предупредительной странице"><a href="index.html" target="_self"><img src="data/images/icons/HTML5_logo_and_wordmark.svg"/></a></li>
 					<li class="li_nav my-tabs-link" title="Первая вкладка. Расскажет обо мне."><a href="#main_one" target="_self">
-						<span class="text_nav">Главная</span><br>
+						<span class="text_nav"><b>Главная</b></span><br>
 						<span class="description_nav">Обо мне</span>
 					</a></li>
 					<li class="li_nav my-tabs-link" title="Вторая вкладка. Здесь я делаю мини и просто проекты вперемешку с практикой."><a href="#main_two" target="_self">
-						<span class="text_nav">Проектики</span><br>
+						<span class="text_nav"><b>Проектики</b></span><br>
 						<span class="description_nav">Моё творчество</span>
 					</a></li>
 					<li class="li_nav my-tabs-link" title="Хочешь бан? Жми!"><a href="#main_three" target="_self">
-						<span class="text_nav">Получить бан</span><br>
+						<span class="text_nav"><b>Получить бан</b></span><br>
 						<span class="description_nav">Навсегда</span>
 					</a></li>
 					<li class="li_nav" title="Взглянуть на исходники этого сайта"><a href="https://github.com/Diablolend/My-First-Site-Expirience">
-						<span class="text_nav">GitHub</span><br>
+						<span class="text_nav"><b>GitHub</b></span><br>
 						<span class="description_nav">Исходный код сайта</span>
 					</a></li>
 				</ul>
@@ -73,7 +73,20 @@
 		<main id="main_one" style="display: block;">
 			<h1>Практический сайт</h1>
 			<hr>
-			<p>Приветствую тебя здесь, кто бы ты ни был. Здесь я практикуюсь в веб-программировании(вёрстке) на HTML, CSS и JavaScript.</p>
+			<p>Приветствую тебя здесь, кто бы ты ни был. Данный сайт является для меня практикой в веб-программировании на HTML, CSS и JavaScript.</p>
+			<article class="progress">
+				<p class="block_head"><b>Моё продвижение в изучении:</b></p><hr>
+				<table class="progress">
+					<tr><td><label for="Web_programming">Веб-программирование: </label></td><td><progress id="Web_programming" max="100" value="27"></progress></td></tr>
+					<tr><td><label for="HTML">HTML: </label></td><td><progress id="HTML" max="100" value="50"></progress></td></tr>
+					<tr><td><label for="CSS">CSS: </label></td><td><progress id="CSS" max="100" value="30"></progress></td></tr>
+					<tr><td><label for="JavaScript">JavaScript: </label></td><td><progress id="JavaScript" max="100" value="2"></progress></td></tr>
+					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
+					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
+					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
+					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
+				</table>
+			</article>
 			<hr>
 		</main>
 
@@ -101,8 +114,7 @@
 				</div>
 			</div>
 			<!-- Это новостное блок. Нужен для новостей. -->
-			<article>
-				<time></time>
+			<article class="news">
 				<p class="block_head"><b>Новости</b></p>
 				<hr>
 				<p>Всё стабильно.</p>

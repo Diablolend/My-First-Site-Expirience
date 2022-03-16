@@ -35,7 +35,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: normal;
-    text-shadow: #464646 1px -1px 0px;
+    text-shadow: #464646 0.5px -0.5px;
     color: #333333;
     text-align: justify;
     margin: 10px auto;
@@ -152,6 +152,24 @@ main {
     margin-right: 10px;
     overflow: hidden;
 }
+article {
+    border-top: 6px solid #505050;
+    border-left: 3px solid #707070;
+    border-right: 6px solid #505050;
+    border-bottom: 3px solid #707070;
+    border-radius: 10px;
+    padding: 10px;
+}
+article.progress {
+    width: 50%;
+    border-top: 6px solid #505050;
+    border-left: 3px solid #707070;
+    border-right: 6px solid #505050;
+    border-bottom: 3px solid #707070;
+    border-radius: 10px;
+    background-color: #c7c7c7d7;
+    padding: 10px;
+}
 .some_textbox {
     background-color: #dadada;
     min-width: 99%;
@@ -176,7 +194,7 @@ aside {
     display: inline-flex;
     flex-direction: column;
     margin-bottom: 10px;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
 }
 .auth_panel {
@@ -201,7 +219,7 @@ aside {
     text-align: center;
     margin-bottom: 10px;
 }
-article {
+article.news {
     border-top: 6px solid #505050;
     border-left: 3px solid #707070;
     border-right: 6px solid #505050;
@@ -258,7 +276,7 @@ footer p {
 }
 /* КОНЕЦ КНОПКИ ВВЕРХ. */
 
-/* НАЧАЛО СТИЛЕЙ ОТДЕЛЬНЫХ ЭЛЕМЕНТОВ. */
+/* НАЧАЛО СТИЛЕЙ ОБЩИХ ЭЛЕМЕНТОВ. */
 @font-face {
     font-family: 'PERSONAL_FONT';
     src: url("../fonts/cyrillic_pixel-7.ttf");
@@ -323,5 +341,11 @@ a:active /* При наведении. Нажатая */ {
     1px -1px #505050;
     -webkit-transform: translateX(2px) translateY(-2px);
     transform: translateX(2px) translateY(-2px);
+}
+/* КОНЕЦ СТИЛЕЙ ОБЩИХ ЭЛЕМЕНТОВ. */
+
+/* НАЧАЛО СТИЛЕЙ ОТДЕЛЬНЫХ ЭЛЕМЕНТОВ. */
+table.progress {
+    width: 100%;
 }
 /* КОНЕЦ СТИЛЕЙ ОТДЕЛЬНЫХ ЭЛЕМЕНТОВ. */
