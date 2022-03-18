@@ -51,7 +51,7 @@
 			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
 			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
 			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1>
+			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
         </main>
 
 		<!-- Вторая вкладка. Для проектов. -->
@@ -60,13 +60,17 @@
 			<hr>
 			<details>
 			<summary>Генерируемая таблица</summary>
-			<script src="data/js/gentable.js"></script>
-			</details>
-			<br>
+				<script>CreateTablePreset();</script>
+				<!-- <button type="button" onclick="CreateTablePreset();">Создать таблицу!</button> -->
+			</details><br>
             <details>
             <summary>Текстбокс</summary>
-			<textarea class="some_textbox" placeholder="Напиши что-нибудь. Это никто не узнает. Честно."></textarea>
-            </details>
+				<textarea class="some_textbox" placeholder="Напиши что-нибудь. Это никто не узнает. Честно."></textarea>
+            </details><br>
+			<details>
+			<summary>Уничтожение сайта</summary>
+				<button type="button" onclick="document.write(1 / 0);">Уничтожить сайт!</button>
+			</details><br>
 		</main>
 
 		<!-- Первая вкладка. Обо мне и сайте. -->
