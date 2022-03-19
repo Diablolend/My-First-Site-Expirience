@@ -34,10 +34,15 @@ function showTab(tabs, tab){
         document.querySelector(link.getAttribute("href")).style.display = 'none';
     });
     document.querySelector(tab.getAttribute("href")).style.display = 'block';
+    sessionStorage.setItem('Tab_Status', tab.getAttribute("href"));
 }
 
 document.addEventListener('DOMContentLoaded', function(){ 
     var my_tabs_array = document.querySelectorAll(".my-tabs");
+    var tabId = sessionStorage.getItem('Tab_Status');
+    if (tabId != null){
+    showTab(document.querySelector(".my-tabs a[href='" + tabId + "']").closest(".my-tabs"), document.querySelector(".my-tabs a[href='" + tabId + "']"))
+    }
     
     my_tabs_array.forEach(function(tabs) {
         var links = tabs.querySelectorAll(".my-tabs-link > a")
