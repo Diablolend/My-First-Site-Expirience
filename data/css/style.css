@@ -21,28 +21,52 @@ html {
 }
 
 head {
-    width: auto;
+    z-index: 0;
 }
 /* КОНЕЦ ТЕХНИЧЕСКОЙ ЧАСТИ САЙТА. */
 
 /* НАЧАЛО ОСНОВНОГО ТЕЛА САЙТА. */
-body {
-    background: black url(../images/pictures/background/outerspace-72.gif) no-repeat;
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+body{
+    /* background: black url(../images/pictures/background/outerspace-72.gif) no-repeat;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: normal;
     text-shadow: #464646 0.5px -0.5px;
     color: #333333;
     text-align: justify;
-    margin: 10px auto;
-    padding: 10px;
     overflow-y: scroll;
+    overflow: overlay;
+}
+/* Это актуальный код прокрутки для всех браузеров, кроме IE и Firefox. */
+body::-webkit-scrollbar {
+    width: 4px; /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: transparent; /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #505050; /* цвет плашки */
+    border-radius: 20px; /* закругления плашки */
+}
+.body {
     width: 1200px !important;
     height: 100% !important;
+    margin: 10px auto;
+    padding: 10px;
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 120px 2fr 120px;
@@ -54,17 +78,6 @@ body {
     "footer footer";
     overflow: overlay;
 }
-    /* Это актуальный код прокрутки для всех браузеров, кроме IE и Firefox. */
-    body::-webkit-scrollbar {
-        width: 10px; /* ширина scrollbar */
-    }
-    body::-webkit-scrollbar-track {
-        background: transparent; /* цвет дорожки */
-    }
-    body::-webkit-scrollbar-thumb {
-        background-color: #505050; /* цвет плашки */
-        border-radius: 20px; /* закругления плашки */
-    }
 /* КОНЕЦ ОСНОВНОГО ТЕЛА САЙТА. */
 
 /* НАЧАЛО ВЕРХНЕЙ ЧАСТИ САЙТА. */

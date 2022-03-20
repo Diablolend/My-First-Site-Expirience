@@ -1,6 +1,11 @@
 // Основной JavaScript практического сайта.
-
 // alert('Привет-привет! Основной модуль JS успешно подгружен!')
+
+// Чекер адреса страницы и удаления записи localStorage для вкладок
+if (sessionStorage.getItem('last_path') != window.location.pathname) {
+    sessionStorage.setItem('last_path', window.location.pathname);
+    sessionStorage.removeItem('Tab_Status')
+}
 
 // Плавные анимации для кнопок скролла вверх и вниз.
 function ScrollUp(){
