@@ -19,7 +19,7 @@ class firefly{
   show(){
     c.beginPath();
     c.arc(this.x,this.y,this.s,0,2*Math.PI);
-    c.fillStyle="#fddba3";
+    c.fillStyle="white";
     c.fill();
   }
 }

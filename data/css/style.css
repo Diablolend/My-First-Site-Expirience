@@ -27,6 +27,8 @@ head {
 
 /* НАЧАЛО ОСНОВНОГО ТЕЛА САЙТА. */
 canvas {
+    background-color: black;
+    background-size: cover;
     position: absolute;
     width: 100%;
     height: 100%;
