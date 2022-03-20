@@ -9,8 +9,20 @@ document.body.innerHTML += `
             min-width: 100%;
             height: 100%;
         }
+        .starfield {
+            background: black url(data/images/pictures/background/skystarfield_aom.png);
+            animation: rotating 2s linear infinite;
+        }
+        @-webkit-keyframes starfield {
+            from{
+                -webkit-transform: rotate(0deg);
+            }
+            to{
+                -webkit-transform: rotate(360deg);
+            }
+        }
         svg {
-            background: hsl(0, 0%, 0%);
+            background: black url(data/images/pictures/background/cosmostar_aom.png);
         }
         .stars {
             transform-origin: center center;
@@ -38,13 +50,6 @@ document.body.innerHTML += `
         .flicker-circles circle {
             r: 50;
             fill: url(#flickerGradient);
-        }
-        .sun {
-          height: 100%; 
-          width: 100%;
-          y: 0; 
-          x: 0; 
-          fill: url(#solarGradient);
         }
         @keyframes flicker-circles-rotate {
             from {
@@ -83,10 +88,6 @@ document.body.innerHTML += `
         }
     </style>
   <defs>
-    <radialGradient cx="0%" cy="100%" r="100%" spreadMethod="pad" id="solarGradient">
-     <stop offset="0%" stop-color="hsla(0, 0%, 100%, 0.35)"/>
-     <stop offset="70%" stop-color="hsla(0, 0%, 0%, 0)"/>
-    </radialGradient>
 
     <radialGradient id="flickerGradient">
         <stop offset="80%" stop-color="hsla(0, 0%, 0%, 1)"/>
@@ -127,12 +128,8 @@ document.body.innerHTML += `
         <circle cx="47" cy="149"/><circle cx="290" cy="11"/><circle cx="506" cy="69"/><circle cx="808" cy="99"/><circle cx="962" cy="49"/><circle cx="15" cy="276"/><circle cx="257" cy="395"/><circle cx="465" cy="342"/><circle cx="707" cy="242"/><circle cx="901" cy="222"/><circle cx="68" cy="551"/><circle cx="270" cy="549"/><circle cx="573" cy="470"/><circle cx="708" cy="466"/><circle cx="914" cy="542"/><circle cx="40" cy="751"/><circle cx="366" cy="806"/><circle cx="461" cy="790"/><circle cx="644" cy="720"/><circle cx="905" cy="684"/><circle cx="192" cy="853"/><circle cx="218" cy="946"/><circle cx="431" cy="854"/><circle cx="740" cy="1006"/>
     </g>
 
-
     <!-- one more grid of stars in front of flicker-circles -->
     <use class="stars stars-lg" href="#stars"/>
-
-    <!-- gradient light source from nearby sun -->
-    <rect class="sun"/>
 
     <!-- this is what a giant star looks like -->
     <!-- <use href="#*" x="10" y="10" transform="scale(50)" fill="yellow"/> -->

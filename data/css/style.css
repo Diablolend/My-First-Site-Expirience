@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 .body {
     width: 1200px !important;
     margin: auto;
-    padding: 10px 0;
+    padding: 10px;
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 120px 2fr 120px;
