@@ -14,9 +14,10 @@ document.body.innerHTML += `
             z-index: -1;
             left: 0;
             bottom: 0;
-            min-width: 100%;
+            width: 100%;
             height: 100%;
             background: black url(data/images/pictures/background/skystarfield_aom.png) no-repeat center;
+            background-size: cover;
             animation: starfield 4s linear infinite;
         }
         @keyframes starfield {
