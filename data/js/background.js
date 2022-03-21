@@ -9,16 +9,27 @@ document.body.innerHTML += `
             min-width: 100%;
             height: 100%;
         }
-        .starfield {
-            background: black url(data/images/pictures/background/skystarfield_aom.png);
-            animation: rotating 2s linear infinite;
+        img.starfield {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            bottom: 0;
+            min-width: 100%;
+            height: 100%;
+            background: black url(data/images/pictures/background/skystarfield_aom.png) no-repeat center;
+            animation: starfield 4s linear infinite;
         }
-        @-webkit-keyframes starfield {
+        @keyframes starfield {
             from{
-                -webkit-transform: rotate(0deg);
+                opacity: 0.3;
+                /* transform: rotate(0deg); */
+            }
+            50% {
+                opacity: 0.6;
             }
             to{
-                -webkit-transform: rotate(360deg);
+                opacity: 0.3;
+                /* transform: rotate(360deg); */
             }
         }
         svg {
@@ -88,7 +99,7 @@ document.body.innerHTML += `
         }
     </style>
   <defs>
-
+    
     <radialGradient id="flickerGradient">
         <stop offset="80%" stop-color="hsla(0, 0%, 0%, 1)"/>
         <stop offset="100%" stop-color="hsla(0, 0%, 0%, 0.25)"/>
@@ -133,4 +144,5 @@ document.body.innerHTML += `
 
     <!-- this is what a giant star looks like -->
     <!-- <use href="#*" x="10" y="10" transform="scale(50)" fill="yellow"/> -->
+    <img class="starfield" src="data/images/pictures/background/skystarfield_aom_l.png"/>
 </svg>`
