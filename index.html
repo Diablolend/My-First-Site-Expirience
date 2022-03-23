@@ -21,11 +21,14 @@
             font-family: 'Times New Roman', Times, serif;
             font-size: 1.5vw;
         }
-        main.index_main {
-            display: block;
+        div.index_outside {
+            padding-top: 40px;
+        }
+        div.index_inner {
             background-color: rgba(255, 255, 255, 0.950);
             max-width: 40%;
             margin: auto;
+            margin-top: 50px;
             padding: 50px;
             padding-bottom: 30px;
             border: 6px dashed black;
@@ -109,16 +112,18 @@
 
 <body>
     <script src="data/js/background.js"></script>
-    <main class="index_main">
-        <p class="index_p"><strong>Приветствую, странник. Сайт находиться в разработке!</strong></p>
-        <p class="index_p"><em>Когда-нибудь я его доделаю. Но не сегодня. :)</em></p>
-        <img class="index_img" src="data/images/pictures/site-in-progress.gif" alt=”In-progress”/>
-        <hr>
-        <p class="you_are_still_want_look"><em>Ты всё равно хочешь увидеть сайт? *_*</em></p>
-        <div class="index_exception">
-        <a href="site.html" target="_self"><b>Увидеть сайт!</b></a>
+    <div class="index_outside">
+        <div class="index_inner">
+            <p class="index_p"><strong>Приветствую, странник. Сайт находиться в разработке!</strong></p>
+            <p class="index_p"><em>Когда-нибудь я его доделаю. Но не сегодня. :)</em></p>
+            <img class="index_img" src="data/images/pictures/site-in-progress.gif" alt=”In-progress”/>
+            <hr>
+            <p class="you_are_still_want_look"><em>Ты всё равно хочешь увидеть сайт? *_*</em></p>
+            <div class="index_exception">
+                <a href="site.html" target="_self"><b>Увидеть сайт!</b></a>
+            </div>
         </div>
-    </main>
+    </div>
 </body>
 
 </html>
