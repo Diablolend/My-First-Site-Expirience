@@ -14,14 +14,11 @@
 
 /* НАЧАЛО ТЕХНИЧЕСКОЙ ЧАСТИ САЙТА. */
 html {
+    min-width: max-content;
     height: 100%;
     /* Код прокрутки на будущее. Сейчас работает только на mazilla firefox */
     scrollbar-width: thin;          /* "auto" или "thin"  */
     scrollbar-color: #505050 transparent;   /* плашка скролла и дорожка */ 
-}
-
-head {
-    z-index: 0;
 }
 /* КОНЕЦ ТЕХНИЧЕСКОЙ ЧАСТИ САЙТА. */
 

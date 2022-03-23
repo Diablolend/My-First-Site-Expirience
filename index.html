@@ -4,38 +4,28 @@
     <meta charset="UTF-8">
     <title>First HTML expierience</title>
     <link href="data/images/icons/favicon.ico" rel="icon" type="image/x-icon"/>
+    <script src="data/js/html5shiv.js"></script>
+    <script src="data/js/index.js"></script>
+    <link rel="stylesheet" href="data/css/style.css"/>
     <style>
         @font-face {
             font-family: 'PERSONAL_FONT';
             src: url("data/fonts/cyrillic_pixel-7.ttf");
         }
         body {
-            background: black url(data/images/pictures/background/outerspace-72.gif) no-repeat;
+            /* background: black url(data/images/pictures/background/outerspace-72.gif) no-repeat;
             -moz-background-size: cover;
             -webkit-background-size: cover;
             -o-background-size: cover;
-            background-size: cover;
+            background-size: cover; */
             font-family: 'Times New Roman', Times, serif;
             font-size: 1.5vw;
-            /* Ниже код прокрутки на будущее. Сейчас работает только на mazilla firefox */
-            scrollbar-width: thin;          /* "auto" или "thin"  */
-            scrollbar-color: #505050 transparent;   /* плашка скролла и дорожка */ 
         }
-        /* Это актуальный код прокрутки для всех браузеров, кроме IE и Firefox. */
-        body::-webkit-scrollbar {
-            width: 10px; /* ширина scrollbar */
-        }
-        body::-webkit-scrollbar-track {
-            background: transparent; /* цвет дорожки */
-        }
-        body::-webkit-scrollbar-thumb {
-            background-color: #505050; /* цвет плашки */
-            border-radius: 20px; /* закругления плашки */
-        }
-        main {
+        main.index_main {
+            display: block;
             background-color: rgba(255, 255, 255, 0.950);
             max-width: 40%;
-            margin: 50px auto auto auto;
+            margin: auto;
             padding: 50px;
             padding-bottom: 30px;
             border: 6px dashed black;
@@ -44,27 +34,25 @@
             pointer-events: none;
             user-select: none;
         }
-        div.exception {
+        div.index_exception {
             display: inline-flex;
             flex-wrap: nowrap;
             justify-content: space-between;
             margin: 0;
             margin-top: 15px;
-        }
-        .exception {
             pointer-events: all;
-            margin-top: 50px;
+            margin-top: 10px;
         }
-        img {
+        img.index_img {
             height: auto;
             width: 70%;
             /* еще больше контроля с max-width */
             max-width: auto;
         }
-        p {
+        p.index_p {
             margin: 5px;
         }
-        .you_are_still_want_look {
+        div.you_are_still_want_look {
             margin: 0;
             margin-bottom: 10px;
             padding: 0;
@@ -117,19 +105,17 @@
             transform: translateX(2px) translateY(-2px);
         }
     </style>
-    <script src="data/js/html5shiv.js"></script>
-    <script src="data/js/index.js"></script>
 </head>
 
 <body>
-    <main>
-        <p><strong>Приветствую, странник. Сайт находиться в разработке!</strong></p>
-        <p><em>Когда-нибудь я его доделаю. Но не сегодня. :)</em></p>
-        <p>Приношу извинения за неудобства.</p>
-        <img src="data/images/pictures/site-in-progress.gif" alt=”In-progress”/>
-        <hr><br>
+    <script src="data/js/background.js"></script>
+    <main class="index_main">
+        <p class="index_p"><strong>Приветствую, странник. Сайт находиться в разработке!</strong></p>
+        <p class="index_p"><em>Когда-нибудь я его доделаю. Но не сегодня. :)</em></p>
+        <img class="index_img" src="data/images/pictures/site-in-progress.gif" alt=”In-progress”/>
+        <hr>
         <p class="you_are_still_want_look"><em>Ты всё равно хочешь увидеть сайт? *_*</em></p>
-        <div class="exception">
+        <div class="index_exception">
         <a href="site.html" target="_self"><b>Увидеть сайт!</b></a>
         </div>
     </main>
