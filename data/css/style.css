@@ -40,6 +40,7 @@ body{
     overflow: overlay;
     position: relative;
     min-height: 100%;
+    display: flex;
 }
 /* Это актуальный код прокрутки для всех браузеров, кроме IE и Firefox. */
 body::-webkit-scrollbar {

@@ -10,15 +10,16 @@ body {
     background-size: cover; */
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5vw;
+    display: flex;
 }
 div.index_outside {
-    padding-top: 40px;
+    margin: auto;
+    width: 100%;
 }
 div.index_inner {
     background-color: rgba(255, 255, 255, 0.950);
     max-width: 40%;
     margin: auto;
-    margin-top: 50px;
     padding: 50px;
     padding-bottom: 30px;
     border: 6px dashed black;
