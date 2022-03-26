@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', function(){
     if (tabId != null){
     showTab(document.querySelector(".my-tabs a[href='" + tabId + "']").closest(".my-tabs"), document.querySelector(".my-tabs a[href='" + tabId + "']"))
     }
+    if (document.location.hash!=''){
+        showTab(document.querySelector(".my-tabs a[href='" + document.location.hash + "']").closest(".my-tabs"), document.querySelector(".my-tabs a[href='" + document.location.hash + "']"))
+    }
     
     my_tabs_array.forEach(function(tabs) {
         var links = tabs.querySelectorAll(".my-tabs-link > a")
