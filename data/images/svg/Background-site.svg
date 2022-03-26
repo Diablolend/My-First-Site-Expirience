@@ -1,0 +1,47 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+<!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+    <defs>
+        <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+        </filter>
+        <filter id="svg_15_blur">
+            <feGaussianBlur stdDeviation="1.4" in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <title>Фон</title>
+        <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+        <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+            <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+        </g>
+    </g>
+    <g>
+        <path transform="rotate(30 289.99999999999994,368.34454345703125) " stroke="#000000" filter="url(#svg_1_blur)" id="svg_1" d="m117.499976,330.544535l345.000035,-25.199998l0,126.000006l-345.000035,0l0,-100.800008z" stroke-width="5" fill="#ffffff"/>
+        <path transform="rotate(30 381.0000000000001,320.34454345703125) " stroke="#000000" filter="url(#svg_1_blur)" id="svg_2" d="m208.49998,282.54453l345.00003,-25.19999l0,126l-345.00003,0l0,-100.80001z" stroke-width="5" fill="#ffffff"/>
+        <path transform="rotate(30 473.0000000000002,275.34454345703125) " stroke="#000000" filter="url(#svg_1_blur)" id="svg_3" d="m300.49998,237.54453l345.00003,-25.19999l0,126l-345.00003,0l0,-100.80001z" stroke-width="5" fill="#ffffff"/>
+        <path transform="rotate(30 544,218.34454345703125) " stroke="#000000" filter="url(#svg_1_blur)" id="svg_4" d="m371.49998,180.54453l345.00003,-25.19999l0,126l-345.00003,0l0,-100.80001z" stroke-width="5" fill="#ffffff"/>
+            <g>
+                <title>В первом слое фона содержится обычный чёрный фон. Нажмите сюда, чтобы увидеть весь фон целиком.</title>
+                <a href="../../js/HTML_Pages/background_preview.html" target="_blank">
+                <text stroke="#000000" transform="rotate(30 284.07852172851557,377.3567810058594) matrix(2.5702191019906024,0,0,3.0921439638426427,-277.8224776476898,-683.5082395799768) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24" id="svg_5" y="351.173462" x="155.571596" stroke-width="0" fill="#000000">Чёрный фон</text></a>
+            </g>
+            <g>
+                <title>Во втором слое находится изображение космоса со свёздами. Он анимирован через мигание, чтобы придать космосу живности или динамики.</title>
+                <a href="../pictures/background/cosmostar_aom.png" target="_blank">
+                <text font-style="normal" font-weight="normal" stroke="#000000" transform="rotate(30.15491485595703 375.72940063476574,330.3538513183594) matrix(1.9517192644261883,0,0,3.2878158873143093,-198.37382674125797,-761.8011153121613) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24" id="svg_7" y="340.319801" x="209.228294" stroke-width="0" fill="#000000">Фон со звёздами</text></a>
+            </g>
+            <g>
+                <title>В третьем слое содержится чистый анимированный SVG-код. В нём содержаться статичные звёзды, специальные чёрные шары для эффекта мигания звёзд и вращающиеся по оси звёзды. Нажмите сюда, чтобы увидеть весь фон целиком.</title>
+                <a href="../../js/HTML_Pages/background_preview.html" target="_blank">
+                <text stroke="#000000" transform="rotate(29.619293212890625 464.238800048828,291.4393310546875) matrix(1.4499289649973355,0,0,3.011972348532197,-161.10198778407297,-112.67545420511257) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24" id="svg_9" y="142.419225" x="316.815629" stroke-width="0" fill="#000000">SVG окружение (СSS)</text></a>
+            </g>
+            <g>
+                <title>В четвёртом слое скрываютя недостатки третьего слоя. Также появляется финальная вишенка - звёздное сияние.</title>
+                <a href="../pictures/background/skystarfield_aom_l.png" target="_blank">
+                <text stroke="#000000" transform="rotate(29.003414154052734 540.668518066406,220.3016052246094) matrix(2.2699708938598633,0,0,3.8043458461761483,-465.3035160523026,-568.3880672904323) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24" id="svg_10" y="215.453125" x="371.059466" stroke-width="0" fill="#000000">Звёздное поле</text></a>
+            </g>
+        <line stroke="#000000" filter="url(#svg_15_blur)" stroke-linecap="null" stroke-linejoin="null" id="svg_15" y2="346.11784" x2="632.239247" y1="187.988503" x1="360.528763" fill-opacity="null" stroke-opacity="null" stroke-width="5" fill="none"/>
+        <line stroke="#000000" filter="url(#svg_15_blur)" stroke-linecap="null" stroke-linejoin="null" id="svg_16" y2="389.118163" x2="539.2389" y1="244.322152" x1="288.861738" fill-opacity="null" stroke-opacity="null" stroke-width="5" fill="none"/>
+        <line stroke="#000000" filter="url(#svg_15_blur)" stroke-linecap="null" stroke-linejoin="null" id="svg_17" y2="436.618208" x2="449.738529" y1="290.488908" x1="197.528122" fill-opacity="null" stroke-opacity="null" stroke-width="5" fill="none"/>
+    </g>
+</svg>

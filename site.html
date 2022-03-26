@@ -7,9 +7,6 @@
 		<meta name="viewport" content="initial-scale=0.0, maximum-scale=1.0">
 		<base target="_blank">
 		<link href="data/images/icons/favicon.ico" rel="icon" type="image/x-icon"/>
-		<!-- <link rel="stylesheet" href="data/css/reset.css"/> -->
-		<link rel="import" href="https://github.com/Diablolend/My-First-Site-Expirience/commits/master">
-		<link rel="import" href="data/archive/old page/test11.html">
 		<script src="data/js/html5shiv.js"></script>
 		<script src="data/js/index.js"></script>
 		<link rel="stylesheet" href="data/css/style.css"/>
@@ -17,7 +14,7 @@
 
 	<!-- Это основное тело страницы. -->
 	<body>
-	<script src="data/js/background.js"></script>
+	<script src="data/js/HTML_Pages/background.js"></script>
 	<div class="body">
 		<!-- Это головной блок. Здесь обычно располагается меню сайта. -->
 		<header>
@@ -32,9 +29,9 @@
 						<span class="text_nav"><b>Проектики</b></span><br>
 						<span class="description_nav">Моё творчество</span>
 					</a></li>
-					<li class="li_nav my-tabs-link" title="Хочешь бан? Жми!"><a href="#main_three" target="_self">
-						<span class="text_nav"><b>Получить бан</b></span><br>
-						<span class="description_nav">Навсегда</span>
+					<li class="li_nav my-tabs-link" title="Третья вкладка. Что я и как сделал и просто записи."><a href="#main_three" target="_self">
+						<span class="text_nav"><b>Хранилище</b></span><br>
+						<span class="description_nav">База знаний</span>
 					</a></li>
 					<li class="li_nav" title="Взглянуть на исходники этого сайта"><a href="https://github.com/Diablolend/My-First-Site-Expirience">
 						<span class="text_nav"><b>GitHub</b></span><br>
@@ -43,59 +40,6 @@
 				</ul>
 			</nav>
 		</header>
-
-		<!-- Третья вкладка. Пока не придумал для чего. -->
-        <main id="main_three">
-            <h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-			<h1>ТЫ В БАНЕ. Я НЕ БУДУ ТЕБЯ РАЗБАНИВАТЬ!!!</h1><br>
-        </main>
-
-		<!-- Вторая вкладка. Для проектов. -->
-		<main id="main_two">
-			<h1>Мои Проектики</h1>
-			<hr>
-			<details>
-			<summary>Генерируемая таблица</summary>
-				<script>CreateTablePreset();</script>
-				<!-- <button type="button" onclick="CreateTablePreset();">Создать таблицу!</button> -->
-			</details><br>
-            <details>
-            <summary>Текстбокс</summary>
-				<textarea class="some_textbox" placeholder="Напиши что-нибудь. Это никто не узнает. Честно."></textarea>
-            </details><br>
-			<details>
-			<summary>Уничтожение сайта</summary>
-				<button type="button" onclick="document.write('<style>body{background-color:black;margin-top:300px;}h1{text-align:center;color:darkred;}</style><h1>Сайт был уничтожен</h1>');">Уничтожить сайт</button>
-			</details><br>
-		</main>
-
-		<!-- Первая вкладка. Обо мне и сайте. -->
-		<main id="main_one" style="display: block;">
-			<h1>Практический сайт</h1>
-			<hr>
-			<p>Приветствую тебя здесь, кто бы ты ни был. Данный сайт является для меня практикой в веб-программировании на HTML, CSS и JavaScript.</p>
-			<article class="progress">
-				<p class="block_head"><b>Моё продвижение в изучении:</b></p><hr>
-				<table class="progress">
-					<tr><td><label for="Web_programming">Веб-программирование: </label></td><td><progress id="Web_programming" max="100" value="27"></progress></td></tr>
-					<tr><td><label for="HTML">HTML: </label></td><td><progress id="HTML" max="100" value="50"></progress></td></tr>
-					<tr><td><label for="CSS">CSS: </label></td><td><progress id="CSS" max="100" value="30"></progress></td></tr>
-					<tr><td><label for="JavaScript">JavaScript: </label></td><td><progress id="JavaScript" max="100" value="2"></progress></td></tr>
-					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
-					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
-					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
-					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
-				</table>
-			</article>
-			<hr>
-		</main>
 
 		<!-- Это боковая панель. Но нуждается в форматировании. ^_^ -->
 		<aside>
@@ -128,6 +72,55 @@
 				<iframe src="https://canary.discord.com/widget?id=193842199480369152&theme=dark" width="210" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 			</article>
 		</aside>
+		
+		<!-- Первая вкладка. Обо мне и сайте. -->
+		<main id="main_one" style="display: block;">
+			<h1>Практический сайт</h1>
+			<hr>
+			<p>Приветствую тебя здесь, кто бы ты ни был. Данный сайт является для меня практикой в веб-программировании на HTML, CSS и JavaScript.</p>
+			<article class="progress">
+				<p class="block_head"><b>Моё продвижение в изучении:</b></p><hr>
+				<table class="progress">
+					<tr><td><label for="Web_programming">Веб-программирование: </label></td><td><progress id="Web_programming" max="100" value="27"></progress></td></tr>
+					<tr><td><label for="HTML">HTML: </label></td><td><progress id="HTML" max="100" value="50"></progress></td></tr>
+					<tr><td><label for="CSS">CSS: </label></td><td><progress id="CSS" max="100" value="30"></progress></td></tr>
+					<tr><td><label for="JavaScript">JavaScript: </label></td><td><progress id="JavaScript" max="100" value="2"></progress></td></tr>
+					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
+					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
+					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
+					<tr><td><label for="WaitWhat">??? </label></td><td><progress id="WaitWhat"></progress></td></tr>
+				</table>
+			</article>
+			<hr>
+		</main>
+
+		<!-- Вторая вкладка. Для проектов. -->
+		<main id="main_two">
+			<h1>Мои Проектики</h1>
+			<hr>
+			<details>
+			<summary>Генерируемая таблица</summary>
+				<script>CreateTablePreset();</script>
+				<!-- <button type="button" onclick="CreateTablePreset();">Создать таблицу!</button> -->
+			</details><br>
+            <details>
+            <summary>Текстбокс</summary>
+				<textarea class="some_textbox" placeholder="Напиши что-нибудь. Это никто не узнает. Честно."></textarea>
+            </details><br>
+			<details>
+			<summary>Уничтожение сайта</summary>
+				<button type="button" onclick="document.write('<style>body{background-color:black;margin-top:300px;}h1{text-align:center;color:darkred;}</style><h1>Сайт был уничтожен</h1>');">Уничтожить сайт</button>
+			</details><br>
+		</main>
+
+		<!-- Третья вкладка. База знаний. -->
+        <main id="main_three">
+			<h1>База знаний</h1><hr>
+			<details>
+			<summary>Как устроен фон сайта</summary>
+			<object type="image/svg+xml" data="data/images/svg/Background-site.svg">Здесь должна быть векторная картинка, но она не работает. :(</object>
+			</details><br>
+        </main>
 
 		<!-- Подвальное тело. Нужно для копирайтов, правил и прочего. -->
 		<footer>

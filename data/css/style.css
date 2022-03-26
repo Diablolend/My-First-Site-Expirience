@@ -345,6 +345,11 @@ a:active /* При наведении. Нажатая */ {
     -webkit-transform: translateX(2px) translateY(-2px);
     transform: translateX(2px) translateY(-2px);
 }
+details {
+    border: 2px solid #000;
+    user-select: none;
+    padding: 10px;
+}
 /* КОНЕЦ СТИЛЕЙ ОБЩИХ ЭЛЕМЕНТОВ. */
 
 /* НАЧАЛО СТИЛЕЙ ОТДЕЛЬНЫХ ЭЛЕМЕНТОВ. */
