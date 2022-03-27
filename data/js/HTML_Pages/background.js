@@ -23,14 +23,15 @@ document.body.innerHTML += `
     @keyframes starfield {
         from{
             opacity: 0.3;
-            /* transform: rotate(0deg); */
+            /* transform: rotateY(0deg); */
         }
         50% {
             opacity: 0.5;
+            /* transform: rotateY(360deg); */
         }
         to{
             opacity: 0.3;
-            /* transform: rotate(360deg); */
+            /* transform: rotateY(0deg); */
         }
     }
     img.cosmos {

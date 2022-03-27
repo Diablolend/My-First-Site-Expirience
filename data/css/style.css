@@ -346,9 +346,26 @@ a:active /* При наведении. Нажатая */ {
     transform: translateX(2px) translateY(-2px);
 }
 details {
-    border: 2px solid #000;
-    user-select: none;
+    background-color: #c7c7c7d7;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    border-top: 4px solid #505050;
+    border-right: 4px solid #505050;
     padding: 10px;
+    transition: all 0.3s ease;
+}
+details summary {
+    background-color: #c7c7c7d7;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    border-top: 4px solid #505050;
+    border-right: 4px solid #505050;
+    padding: 10px;
+    user-select: none;
+}
+summary {
+    list-style-type: none;
+    margin-bottom: 10px;
 }
 /* КОНЕЦ СТИЛЕЙ ОБЩИХ ЭЛЕМЕНТОВ. */
 
@@ -357,3 +374,14 @@ table.progress {
     width: 100%;
 }
 /* КОНЕЦ СТИЛЕЙ ОТДЕЛЬНЫХ ЭЛЕМЕНТОВ. */
+
+/* НАЧАЛО БЛОКА АНИМАЦИЙ */
+@keyframes test {
+    from {
+        transform: rotateX(360);
+    }
+    to {
+        transform: rotateX(360);
+    }
+}
+/* КОНЕЦ БЛОКА АНИМАЦИЙ */
