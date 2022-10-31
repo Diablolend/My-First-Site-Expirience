@@ -29,7 +29,14 @@ function CreateTablePreset() {
     }
     document.write ("<\/table> "); 
     //alert('Таблица создана!')
-    }
+}
+
+// Webamp - https://github.com/captbaritone/webamp
+function Web_player() {
+    const app = document.getElementById("app")
+    const webamp = new Webamp();
+    webamp.renderWhenReady(app);
+}
 
 // Замена css tabs. Jeb mosniy. Переключает вкладки без отдельных страниц.
 function showTab(tabs, tab){

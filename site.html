@@ -9,6 +9,7 @@
 		<link href="data/images/icons/favicon.ico" rel="icon" type="image/x-icon"/>
 		<script src="data/js/html5shiv.js"></script>
 		<script src="data/js/index.js"></script>
+		<script src="data/js/webamp.bundle.js"></script>
 		<link rel="stylesheet" href="data/css/style.css"/>
 	</head>
 
@@ -72,7 +73,7 @@
 				<iframe src="https://discord.com/widget?id=193842199480369152&theme=dark" width="210" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 			</article>
 		</aside>
-		
+
 		<!-- Первая вкладка. Обо мне и сайте. -->
 		<main id="main_one" style="display: block;">
 			<h1>Практический сайт</h1>
@@ -110,6 +111,13 @@
 			<details>
 			<summary>Уничтожение сайта</summary>
 				<button type="button" onclick="document.write('<style>body{background-color:black;margin-top:300px;}h1{text-align:center;color:darkred;}</style><h1>Сайт был уничтожен</h1>');">Уничтожить сайт</button>
+			</details><br>
+			<details>
+			<summary>Webamp - плеер Winamp</summary>
+			<button type="button" onclick="Web_player();"><b>Нажми сюда для создания плеера</b></button>
+			<p>Ссылочка на исходник: <a class="without_style" href="https://github.com/captbaritone/webamp">Github</a>
+			</p>
+			<div id="app"></div>
 			</details><br>
 		</main>
 
