@@ -56,8 +56,8 @@ document.body.innerHTML += `
     }
 </style>
 <svg wversion="1.1" height="1" width="1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="black"></svg>
-<img class="cosmos" src="data/images/pictures/background/cosmostar_aom.png"/>
-<img class="starfield" src="data/images/pictures/background/skystarfield_aom_l.png"/>
+<img class="cosmos" src="data/images/pictures/background/cosmostar_aom_lq.png"/>
+<img class="starfield" src="data/images/pictures/background/skystarfield_aom_lq.png"/>
 <svg wversion="1.1" height="1" width="1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="star-background">
     <style>
         svg.star-background {
