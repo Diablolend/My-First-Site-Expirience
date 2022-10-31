@@ -7,6 +7,11 @@ if (sessionStorage.getItem('last_path') != window.location.pathname) {
     sessionStorage.removeItem('Tab_Status')
 }
 
+// Код для плавного переключения страниц
+$(document).ready(function() {    
+    $("body").css("opacity", "1");
+  });
+
 // Плавные анимации для кнопок скролла вверх и вниз.
 function ScrollUp(){
     var t,s;

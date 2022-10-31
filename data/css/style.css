@@ -19,6 +19,8 @@ html {
     /* Код прокрутки на будущее. Сейчас работает только на mazilla firefox */
     scrollbar-width: thin;          /* "auto" или "thin"  */
     scrollbar-color: #505050 transparent;   /* плашка скролла и дорожка */ 
+    /* Ниже расположен важный параметр для плавного переключения страниц (цветность затемнения) */ 
+    background-color: black;
 }
 /* КОНЕЦ ТЕХНИЧЕСКОЙ ЧАСТИ САЙТА. */
 
@@ -41,6 +43,9 @@ body{
     position: relative;
     min-height: 100%;
     display: flex;
+    /* Ниже расположены параметры для плавного переключения страниц */
+    opacity:0;
+    transition:1s;
 }
 /* Это актуальный код прокрутки для всех браузеров, кроме IE и Firefox. */
 body::-webkit-scrollbar {
