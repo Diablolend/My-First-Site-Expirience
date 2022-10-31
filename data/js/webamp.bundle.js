@@ -17160,6 +17160,7 @@ const MainContextMenu = Object(react["memo"])(({
   }, [menuOpened]);
   return /*#__PURE__*/Object(jsx_runtime["jsxs"])(react["Fragment"], {
     children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(LinkNode, {
+      id: "shapka",
       href: "https://webamp.org/about",
       target: "_blank",
       label: "Webamp..."

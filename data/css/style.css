@@ -299,7 +299,7 @@ input {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
-a.without_style {
+a.without_style, #about, #shapka {
     all: revert;
 }
 a /* Общий формат ссылок */ {
