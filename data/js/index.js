@@ -12,6 +12,14 @@ $(document).ready(function() {
     $("body").css("opacity", "1");
 });
 
+// Спойлер для сайта
+$(document).ready(function(){
+    $('.spoiler_head').click(function(){
+        $(this).next('.spoiler_body').toggle('normal');
+        return false;
+    });
+});
+
 // Плавные анимации для кнопок скролла вверх и вниз.
 function ScrollUp(){
     var t,s;

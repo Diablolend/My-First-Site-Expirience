@@ -194,6 +194,39 @@ div.return_anim {
 div.return_anim a {
     margin: 5px;
 }
+div.spoiler_head { 
+    cursor: pointer; 
+    font-weight: bold; 
+    text-decoration: underline; 
+    background-color: #c7c7c7d7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid #505050;
+    border-top: 4px solid #505050;
+    border-right: 4px solid #505050;
+    padding: 10px;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+div.spoiler_body { 
+    display: none;  
+    background-color: #c7c7c7d7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-right: 4px solid #505050;
+    border-bottom: 2px solid #505050;
+    border-left: 2px solid #505050;
+    padding: 10px;
+}
+div.spoiler_head::after {  
+    content: "▼";
+    float: right;
+    margin-right: .3em;
+}
+div.spoiler_body > div.spoiler_head::after {
+    content: "▲";
+    float: right;
+}
 /* КОНЕЦ ОСНОВНОГО БЛОКА САЙТА. */
 
 /* НАЧАЛО БОКОВОЙ ЧАСТИ САЙТА. */
@@ -372,6 +405,9 @@ details summary {
     padding: 10px;
     user-select: none;
 }
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
 summary::-webkit-details-marker {
     display: none;
 }
@@ -390,10 +426,6 @@ summary::after {
     content: "▼";
     float: right;
     margin-right: .3em;
-
-}
-details[open] summary ~ * {
-    animation: sweep .5s ease-in-out;
 }
 details[open] > summary::after {
     content: "▲";
