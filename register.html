@@ -1,24 +1,31 @@
+<head>		
+    <script src="data/js/jquery-3.6.1.js"></script>
+    <script src="data/js/index.js"></script>
+</head>
 <style>
-body {
-    background-color: black;
-}
-video {
-    position: fixed;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-}
-input {
-    background-color: gray;
-    width: 80px;
-    height: 30px;
-    font-size: 120%;
-}
-header {
-    position: fixed;
-    z-index: 2;
-}
-</style>
+    body {
+        background-color: black;
+        /* Ниже расположены параметры для плавного переключения страниц */
+        opacity:0;
+        transition:1s;
+    }
+    video {
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+    input {
+        background-color: gray;
+        width: 80px;
+        height: 30px;
+        font-size: 120%;
+    }
+    header {
+        position: fixed;
+        z-index: 2;
+    }
+    </style>
 
 <body>
     <header>
