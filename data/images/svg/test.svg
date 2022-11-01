@@ -1,0 +1,60 @@
+<svg width="799.9999999999999" height="600" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG-Editor/ -->
+ <defs>
+  <filter id="svg_1_blur" x="-50%" y="-50%" width="200%" height="200%">
+   <feGaussianBlur stdDeviation="0"/>
+  </filter>
+  <filter id="svg_15_blur">
+   <feGaussianBlur stdDeviation="1.4"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_23_blur">
+   <feGaussianBlur stdDeviation="1.8" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_26_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Фон</title>
+  <rect x="-1" y="-1" width="802" height="602" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_6" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <path fill="#ffffff" stroke-width="5" d="m117.49998,330.54453l345.00003,-25.19999l0,126l-345.00003,0l0,-100.80001z" id="svg_1" filter="url(#svg_1_blur)" stroke="#000000" transform="rotate(30 289.99999999999994,368.34454345703125) "/>
+  <path fill="#ffffff" stroke-width="5" d="m208.49998,282.54453l345.00003,-25.19999l0,126l-345.00003,0l0,-100.80001z" id="svg_2" filter="url(#svg_1_blur)" stroke="#000000" transform="rotate(30 381.0000000000001,320.34454345703125) "/>
+  <path fill="#ffffff" stroke-width="5" d="m300.49998,237.54453l345.00003,-25.19999l0,126l-345.00003,0l0,-100.80001z" id="svg_3" filter="url(#svg_1_blur)" stroke="#000000" transform="rotate(30 473.0000000000002,275.34454345703125) "/>
+  <path fill="#ffffff" stroke-width="5" d="m371.49998,180.54453l345.00003,-25.19999l0,126l-345.00003,0l0,-100.80001z" id="svg_4" filter="url(#svg_1_blur)" stroke="#000000" transform="rotate(30 544,218.34454345703125) "/>
+  <g id="svg_8">
+   <title transform="translate(-2.8571419715881348,-55.71426773071289) translate(-1.4285709857940674,57.14284133911133) ">В первом слое фона содержится обычный чёрный фон. Нажмите сюда, чтобы увидеть весь фон целиком.</title>
+   <a id="svg_11">
+    <text fill="#000000" stroke-width="0" x="153.904146" y="351.635463" id="svg_5" font-size="24" font-family="'Times New Roman', Times, serif" text-anchor="start" xml:space="preserve" transform="rotate(30 279.94592285156284,378.99566650390614) matrix(2.5702191019906024,0,0,3.0921439638426427,-277.8224776476898,-683.5082395799768) " stroke="#000000">Чёрный фон</text>
+   </a>
+  </g>
+  <g id="svg_12">
+   <title transform="translate(-1.4285709857940674,1.4285709857940674) ">Во втором слое находится изображение космоса со свёздами. Он анимирован через мигание, чтобы придать космосу живности или динамики.</title>
+   <a id="svg_13">
+    <text fill="#000000" stroke-width="0" x="208.496339" y="340.754306" id="svg_7" font-size="24" font-family="'Times New Roman', Times, serif" text-anchor="start" xml:space="preserve" transform="rotate(30.15491485595703 374.1817626953125,332.0144958496094) matrix(1.9517192644261883,0,0,3.2878158873143093,-198.37382674125797,-761.8011153121613) " stroke="#000000" font-weight="normal" font-style="normal">Фон со звёздами</text>
+   </a>
+  </g>
+  <g id="svg_14">
+   <title transform="translate(0,-1.4285709857940674) ">В третьем слое содержится чистый анимированный SVG-код. В нём содержаться статичные звёзды, специальные чёрные шары для эффекта мигания звёзд и вращающиеся по оси звёзды. Нажмите сюда, чтобы увидеть весь фон целиком.</title>
+   <a id="svg_18">
+    <text fill="#000000" stroke-width="0" x="316.815629" y="141.944927" id="svg_9" font-size="24" font-family="'Times New Roman', Times, serif" text-anchor="start" xml:space="preserve" transform="rotate(29.619293212890625 464.1246337890628,290.2599792480469) matrix(1.4499289649973355,0,0,3.011972348532197,-161.10198778407297,-112.67545420511257) " stroke="#000000">SVG окружение (СSS)</text>
+   </a>
+  </g>
+  <g id="svg_19">
+   <title transform="translate(-4.285713195800781,6.428569793701172) ">В четвёртом слое скрываютcя недостатки третьего слоя. Также появляется финальная вишенка - звёздное сияние.</title>
+   <a id="svg_20">
+    <text fill="#000000" stroke-width="0" x="369.171462" y="217.142921" id="svg_10" font-size="24" font-family="'Times New Roman', Times, serif" text-anchor="start" xml:space="preserve" transform="rotate(29.003414154052734 536.2957763671875,226.88021850585935) matrix(2.2699708938598633,0,0,3.8043458461761483,-465.3035160523026,-568.3880672904323) " stroke="#000000">Звёздное поле</text>
+   </a>
+  </g>
+  <line fill="none" stroke-width="5" stroke-opacity="null" fill-opacity="null" x1="360.528763" y1="187.988503" x2="632.239247" y2="346.11784" id="svg_15" stroke-linejoin="null" stroke-linecap="null" filter="url(#svg_15_blur)" stroke="#000000"/>
+  <line fill="none" stroke-width="5" stroke-opacity="null" fill-opacity="null" x1="288.861738" y1="244.322152" x2="539.2389" y2="389.118163" id="svg_16" stroke-linejoin="null" stroke-linecap="null" filter="url(#svg_15_blur)" stroke="#000000"/>
+  <line fill="none" stroke-width="5" stroke-opacity="null" fill-opacity="null" x1="197.528122" y1="290.488908" x2="449.738529" y2="436.618208" id="svg_17" stroke-linejoin="null" stroke-linecap="null" filter="url(#svg_15_blur)" stroke="#000000"/>
+  <rect id="svg_21" height="66" width="261" y="502.310268" x="490.357142" stroke-width="5.5" stroke="#000" fill="#fff"/>
+  <line filter="url(#svg_23_blur)" stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_23" y2="512.142715" x2="408.928559" y1="337.85705" x1="106.78578" fill-opacity="null" stroke-opacity="null" stroke-width="8.5" fill="none"/>
+  <text font-style="normal" font-weight="normal" filter="url(#svg_26_blur)" stroke="#000" transform="matrix(1.2649157652564595,0,0,1.928703587379953,-130.76144439127114,-473.95881074953843) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24" id="svg_26" y="531.428418" x="496.78568" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">SVG окружение v2</text>
+ </g>
+</svg>

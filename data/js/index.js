@@ -10,7 +10,7 @@ if (sessionStorage.getItem('last_path') != window.location.pathname) {
 // Код для плавного переключения страниц
 $(document).ready(function() {    
     $("body").css("opacity", "1");
-  });
+});
 
 // Плавные анимации для кнопок скролла вверх и вниз.
 function ScrollUp(){
