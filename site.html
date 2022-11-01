@@ -100,37 +100,35 @@
 		<main id="main_two">
 			<h1>Мои Проектики</h1>
 			<hr>
-			<details>
-			<summary>Генерируемая таблица</summary>
+			<div class="spoiler_head">Генерируемая таблица</div>
+			<div class="spoiler_body">
 				<script>CreateTablePreset();</script>
 				<!-- <button type="button" onclick="CreateTablePreset();">Создать таблицу!</button> -->
-			</details><br>
-            <details>
-            <summary>Текстбокс</summary>
+			</div><br>
+			<div class="spoiler_head">Текстбокс</div>
+			<div class="spoiler_body">
 				<textarea class="some_textbox" placeholder="Напиши что-нибудь. Это никто не узнает. Честно."></textarea>
-            </details><br>
-			<details>
-			<summary>Уничтожение сайта</summary>
-				<button type="button" onclick="document.write('<style>body{background-color:black;margin-top:300px;}h1{text-align:center;color:darkred;}</style><h1>Сайт был уничтожен</h1>');">Уничтожить сайт</button>
-			</details><br>
-			<details>
-			<summary>Webamp - плеер Winamp</summary>
-			<button type="button" onclick="Web_player();"><b>Нажми сюда для создания плеера</b></button>
-			<p>Ссылочка на исходник: <a class="without_style" href="https://github.com/captbaritone/webamp">Github</a>
-			</p>
-			<div id="app"></div>
-			</details><br>
-			<div class="spoiler_head">OTKROY</div>
-			<div class="spoiler_body">alo</div>
+            </div><br>
+			<div class="spoiler_head">Уничтожение сайта</div>
+			<div class="spoiler_body">
+				<button type="button" onclick="document.write('<style>body{background-color:black;margin-top:300px;}h1{text-align:center;color:darkred;}</style><h1>Сайт был уничтожен</h1>');"><h1>Уничтожить сайт</h1></button>
+			</div><br>
+			<div class="spoiler_head">Webamp - плеер Winamp</div>
+			<div class="spoiler_body">
+				<button type="button" onclick="Web_player();"><h2><b>Нажми сюда для создания плеера</b></h2></button>
+				<p>Ссылочка на исходник: <a class="without_style" href="https://github.com/captbaritone/webamp">Github</a>
+				</p>
+				<div id="app"></div>
+			</div><br>
 		</main>
 
 		<!-- Третья вкладка. База знаний. -->
         <main id="main_three">
 			<h1>База знаний</h1><hr>
-			<details>
-			<summary>Как устроен фон сайта</summary>
+			<div class="spoiler_head">Как устроен фон сайта</div>
+			<div class="spoiler_body">
 			<object type="image/svg+xml" data="data/images/svg/Background-site.svg">Здесь должна быть векторная картинка, но она не работает. :(</object>
-			</details><br>
+			</div><br>
         </main>
 
 		<!-- Подвальное тело. Нужно для копирайтов, правил и прочего. -->

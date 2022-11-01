@@ -14,8 +14,11 @@ $(document).ready(function() {
 
 // Спойлер для сайта
 $(document).ready(function(){
+    $('.spoiler_head').append('<span class="state">▼</span><style>span.state { float:right; margin-right: .3em; }</style>');
     $('.spoiler_head').click(function(){
-        $(this).next('.spoiler_body').toggle('normal');
+        if ($(this).next('.spoiler_body').css("display")!="none") $(this).children(".state").html("▼");
+        else $(this).children(".state").html("▲");
+        $(this).next('.spoiler_body').slideToggle('normal');
         return false;
     });
 });

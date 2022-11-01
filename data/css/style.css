@@ -197,15 +197,15 @@ div.return_anim a {
 div.spoiler_head { 
     cursor: pointer; 
     font-weight: bold; 
-    text-decoration: underline; 
     background-color: #c7c7c7d7;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 2px solid #505050;
+    border-bottom: 2px solid #505050;
+    border-left: 2px solid #505050;;
     border-top: 4px solid #505050;
     border-right: 4px solid #505050;
+    box-shadow: 0 3px 2px -2px #505050;
     padding: 10px;
-    transition: all 0.3s ease;
     user-select: none;
 }
 div.spoiler_body { 
@@ -216,16 +216,8 @@ div.spoiler_body {
     border-right: 4px solid #505050;
     border-bottom: 2px solid #505050;
     border-left: 2px solid #505050;
+    box-shadow: 0 3px 2px -2px #505050;
     padding: 10px;
-}
-div.spoiler_head::after {  
-    content: "▼";
-    float: right;
-    margin-right: .3em;
-}
-div.spoiler_body > div.spoiler_head::after {
-    content: "▲";
-    float: right;
 }
 /* КОНЕЦ ОСНОВНОГО БЛОКА САЙТА. */
 
@@ -386,7 +378,7 @@ a:active /* При наведении. Нажатая */ {
     -webkit-transform: translateX(2px) translateY(-2px);
     transform: translateX(2px) translateY(-2px);
 }
-details {
+/* details {
     background-color: #c7c7c7d7;
     border: 2px solid #505050;
     border-radius: 10px;
@@ -430,7 +422,7 @@ summary::after {
 details[open] > summary::after {
     content: "▲";
     float: right;
-}
+} */
 /* КОНЕЦ СТИЛЕЙ ОБЩИХ ЭЛЕМЕНТОВ. */
 
 /* НАЧАЛО СТИЛЕЙ ОТДЕЛЬНЫХ ЭЛЕМЕНТОВ. */
@@ -447,9 +439,5 @@ table.progress {
     to {
         transform: rotateX(360);
     }
-}
-@keyframes sweep {
-    0%    {opacity: 0; margin-top: -10px;}
-    100%  {opacity: 1; margin-top: 0px;}
 }
 /* КОНЕЦ БЛОКА АНИМАЦИЙ */
