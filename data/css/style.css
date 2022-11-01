@@ -361,6 +361,7 @@ details {
     border-right: 4px solid #505050;
     padding: 10px;
     transition: all 0.3s ease;
+    display: block;
 }
 details summary {
     background-color: #c7c7c7d7;
@@ -371,9 +372,32 @@ details summary {
     padding: 10px;
     user-select: none;
 }
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::-moz-list-bullet {
+    list-style-type: none;
+}
+summary::marker{
+    display: none;
+} 
 summary {
     list-style-type: none;
     margin-bottom: 10px;
+    position: relative;
+}
+summary::after {  
+    content: "▼";
+    float: right;
+    margin-right: .3em;
+
+}
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+details[open] > summary::after {
+    content: "▲";
+    float: right;
 }
 /* КОНЕЦ СТИЛЕЙ ОБЩИХ ЭЛЕМЕНТОВ. */
 
@@ -391,5 +415,9 @@ table.progress {
     to {
         transform: rotateX(360);
     }
+}
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px;}
+    100%  {opacity: 1; margin-top: 0px;}
 }
 /* КОНЕЦ БЛОКА АНИМАЦИЙ */
