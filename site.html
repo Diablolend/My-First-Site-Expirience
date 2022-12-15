@@ -81,7 +81,13 @@
 
 		<!-- Первая вкладка. Обо мне и сайте. -->
 		<main id="main_one" style="display: block;">
+			<div style="float: left;">
 			<h1>Практический сайт</h1>
+			</div>
+				<div style="float: right;">
+					<input type="button" value="Открыть все" onclick="$('.spoiler_body').show('normal')">
+					<input type="button" value="Закрыть все" onclick="$('.spoiler_body').hide('normal')">
+				</div>
 			<hr>
 			<p>Приветствую тебя здесь, кто бы ты ни был. Данный сайт является для меня практикой в веб-программировании на HTML, CSS и JavaScript.</p>
 			<article class="progress">
@@ -145,7 +151,7 @@
 
 		<!-- Кнопки вверх и вниз. -->
 		<div class="up-down">
-			<span class="up"><a onClick="ScrollUp();" style="user-select: none;">↑</a></span>
+			<span class="up"><a onClick="ScrollUp();" style="user-select: none; ">↑</a></span><br><br>
 			<span class="down"><a onclick="ScrollDown();" style="user-select: none;">↓</a></span>
 		</div>
 	</div>

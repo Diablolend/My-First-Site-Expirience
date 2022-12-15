@@ -12,7 +12,8 @@ $(document).ready(function() {
     $("body").css("opacity", "1");
 });
 
-// Спойлер для сайта
+// Спойлер для сайта - создаётся через <div class="spoiler_head">название</div> и 
+// <div class="spoiler_body">наполнение</div>
 $(document).ready(function(){
     $('.spoiler_head').append('<span class="state">▼</span><style>span.state { float:right; margin-right: .3em; }</style>');
     $('.spoiler_head').click(function(){
