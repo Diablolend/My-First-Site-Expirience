@@ -39,9 +39,9 @@
 						<span class="text_nav"><b>GitHub</b></span><br>
 						<span class="description_nav">Исходный код сайта</span>
 					</a></li>
-					<li class="li_nav" title="СПОЙЛЕРЫ"><a target="_self" href="#">
-						<span class="text_nav"><input type="button" value="Закрыть все" onclick="$('.spoiler_body').hide('normal')"></span><br>
-						<span class="description_nav"><input type="button" value="Открыть все" onclick="$('.spoiler_body').show('normal')"></span>
+					<li class="li_nav" title="Слышь дай ДЕНЯК"><a href="#">
+						<span class="text_nav"><b>Donate</b></span><br>
+						<span class="description_nav">Поддержать автора</span>
 					</a></li>
 				</ul>
 			</nav>
@@ -81,13 +81,13 @@
 
 		<!-- Первая вкладка. Обо мне и сайте. -->
 		<main id="main_one" style="display: block;">
-			<div style="float: left;">
-			<h1>Практический сайт</h1>
-			</div>
-				<div style="float: right;">
+			<div class="h1_and_button">
+				<h1>Практический сайт</h1>
+				<div>
 					<input type="button" value="Открыть все" onclick="$('.spoiler_body').show('normal')">
 					<input type="button" value="Закрыть все" onclick="$('.spoiler_body').hide('normal')">
 				</div>
+			</div>
 			<hr>
 			<p>Приветствую тебя здесь, кто бы ты ни был. Данный сайт является для меня практикой в веб-программировании на HTML, CSS и JavaScript.</p>
 			<article class="progress">
@@ -108,7 +108,13 @@
 
 		<!-- Вторая вкладка. Для проектов. -->
 		<main id="main_two">
-			<h1>Мои Проектики</h1>
+			<div class="h1_and_button">
+				<h1>Мои Проектики</h1>
+				<div>
+					<input type="button" value="Открыть все" onclick="$('.spoiler_body').show('normal')">
+					<input type="button" value="Закрыть все" onclick="$('.spoiler_body').hide('normal')">
+				</div>
+			</div>
 			<hr>
 			<div class="spoiler_head">Генерируемая таблица</div>
 			<div class="spoiler_body">
@@ -134,7 +140,14 @@
 
 		<!-- Третья вкладка. База знаний. -->
         <main id="main_three">
-			<h1>База знаний</h1><hr>
+			<div class="h1_and_button">
+				<h1>База знаний</h1>
+				<div>
+					<input type="button" value="Открыть все" onclick="$('.spoiler_body').show('normal')">
+					<input type="button" value="Закрыть все" onclick="$('.spoiler_body').hide('normal')">
+				</div>
+			</div>
+			<hr>
 			<div class="spoiler_head">Как устроен фон сайта</div>
 			<div class="spoiler_body">
 			<object type="image/svg+xml" data="data/images/svg/Background-site.svg">Здесь должна быть векторная картинка, но она не работает. :(</object>

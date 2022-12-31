@@ -219,6 +219,11 @@ div.spoiler_body {
     box-shadow: 0 3px 2px -2px #505050;
     padding: 10px;
 }
+div.h1_and_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* КОНЕЦ ОСНОВНОГО БЛОКА САЙТА. */
 
 /* НАЧАЛО БОКОВОЙ ЧАСТИ САЙТА. */

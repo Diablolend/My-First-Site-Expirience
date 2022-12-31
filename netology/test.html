@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        .wrap,
+        .layout-wrap
+        {
+            height: 100%;
+        }
+        .wrap{
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .layout-wrap{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .layout-main{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-shrink: 1;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .right-main{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 0;
+            flex-shrink: 0;
+            gap: 10px;
+            height: 100%;
+            flex-basis: 240px;
+        }
+        .header{
+            min-height: 50px;
+            background-color: burlywood;
+        }
+        .content{
+            height: 100%;
+            flex-grow: 1;
+            background-color: burlywood;
+        }
+        .right-block{
+            background-color: burlywood;
+            width: 100%;
+            min-height: 50px;
+        }
+        .footer{
+            min-height: 50px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="layout-wrap">
+            <div class="layout-main">
+                <div class="header">
+                    HEADER
+                </div>
+                <div class="content">
+                    CONTENT
+                </div>
+            </div>
+            <div class="right-main">
+                <div class="right-block">
+                    BLOCK1
+                </div>
+                <div class="right-block">
+                    BLOCK2
+                </div>
+                <div class="right-block">
+                    BLOCK2
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            FOOTER
+        </div>
+    </div>
+</body>
+</html>

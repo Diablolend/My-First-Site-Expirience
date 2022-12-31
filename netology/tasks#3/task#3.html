@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common-styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Блог</title>
+</head>
+
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .news {
+        width: 1020px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card-date {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .card-name {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .card-header {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .card {
+        box-sizing: border-box;
+        width: 320px;
+        padding: 50px 40px;
+        border: 2px solid #dfdee8;
+    }
+
+    .news {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card:nth-child(1n+4) {
+        margin-top: 30px;
+    }
+
+    .card:nth-child(3n+2) {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+</style>
+
+<body>
+    <div class="news">
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Своя тусовка: афиша событий на сентябрь 2018</h3>
+            </header>
+            <div class="card-content">
+                <p>Каждый месяц «Нетология» рассказывает о лучших мероприятиях по маркетингу, менеджменту, дизайну,
+                    информационным
+                    технологиям и управлению персоналом.</p>
+            </div>
+        </article>
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Разбираемся в дизайнерских профессиях</h3>
+            </header>
+            <div class="card-content">
+                <p>Алексей Бородкин, product lead и глава Гильдии вольных проектировщиков, рассказал на открытом занятии
+                    Нетологии,
+                    как разобраться в дизайнерских направлениях и выбрать профессию.</p>
+            </div>
+        </article>
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Скоринг социальных сетей: чат-боты на смену HRD</h3>
+            </header>
+            <div class="card-content">
+                <p>Вячеслав Золотухин, идеолог и основатель системы управления задачами EvoDesk, написал колонку для
+                    блога Нетологии
+                    о том, как меняется рынок HR.</p>
+            </div>
+        </article>
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Нетворкинг для интровертов</h3>
+            </header>
+            <div class="card-content">
+                <p>Вербаховская Ксения, коммерческий автор, рассказала блогу Нетологии, как интроверту составить
+                    сценарий действий
+                    на мероприятиях и построить эффективный нетворкинг.</p>
+            </div>
+        </article>
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Какую пользу приносит инфографика</h3>
+            </header>
+            <div class="card-content">
+                <p>Павел Лебедев, бывший руководитель отдела веб-дизайна Лаборатории Касперского и спикер №1 по дизайну,
+                    рассказал,
+                    какую пользу приносит инфографика и поделился списком книг для новичков.</p>
+            </div>
+        </article>
+        <article class="card">
+            <header class="card-header">
+                <time class="card-date" datetime="2018-08-27">13 days ago</time>
+                <h3 class="card-name">Геймдизайнер с нуля: как начать делать игры без опыта</h3>
+            </header>
+            <div class="card-content">
+                <p>Никита Голубев, коммерческий автор и переводчик, специально для блога Нетологии перевёл статью
+                    разработчика игр
+                    Анжелы Хе о том, как без навыков программирования создать свою первую игру.</p>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>
