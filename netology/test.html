@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,6 +22,7 @@
             display: flex;
             flex-direction: row;
             gap: 10px;
+            margin-bottom: 10px;
         }
         .layout-main{
             display: flex;
@@ -30,7 +30,6 @@
             flex-grow: 1;
             flex-shrink: 1;
             gap: 10px;
-            margin-bottom: 10px;
         }
         .right-main{
             display: flex;
@@ -53,7 +52,10 @@
         .right-block{
             background-color: burlywood;
             width: 100%;
-            min-height: 50px;
+            min-height: 80px;
+        }
+        .right-block-last{
+            flex-grow: 1;
         }
         .footer{
             min-height: 50px;
@@ -70,6 +72,7 @@
                 </div>
                 <div class="content">
                     CONTENT
+					<textarea></textarea>
                 </div>
             </div>
             <div class="right-main">
@@ -79,7 +82,7 @@
                 <div class="right-block">
                     BLOCK2
                 </div>
-                <div class="right-block">
+                <div class="right-block right-block-last">
                     BLOCK2
                 </div>
             </div>
