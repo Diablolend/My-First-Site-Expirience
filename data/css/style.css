@@ -47,6 +47,16 @@ body{
     opacity:0;
     transition:1s;
 }
+/* Ниже код для плавного переключения вкладок */
+.my-tabs-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.my-tabs-content.active {
+    display: block;
+    opacity: 1;
+}
 /* Это актуальный код прокрутки для всех браузеров, кроме IE и Firefox. */
 body::-webkit-scrollbar {
     width: 4px; /* ширина scrollbar */
@@ -142,6 +152,12 @@ nav {
     font-size: 80%;
     line-height: 16px;
     text-align: center;
+}
+.functional_buttons {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    right: 0;
 }
 /* КОНЕЦ ВЕРХНЕЙ ЧАСТИ САЙТА. */
 

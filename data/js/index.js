@@ -56,13 +56,25 @@ function Web_player() {
 }
 
 // Замена css tabs. Jeb mosniy. Переключает вкладки без отдельных страниц.
-function showTab(tabs, tab){
-    var links = tabs.querySelectorAll(".my-tabs-link > a")
-    links.forEach(function(link) {
-        console.log(link.getAttribute("href"))
-        document.querySelector(link.getAttribute("href")).style.display = 'none';
+function showTab(tabs, tab) {
+    var links = tabs.querySelectorAll(".my-tabs-link > a");
+    links.forEach(function (link) {
+        var content = document.querySelector(link.getAttribute("href"));
+        content.classList.remove("active");
     });
-    document.querySelector(tab.getAttribute("href")).style.display = 'block';
+    var activeContent = document.querySelector(tab.getAttribute("href"));
+    activeContent.style.display = 'block';
+    setTimeout(function () {
+        activeContent.classList.add("active");
+    }, 10);
+    setTimeout(function () {
+        links.forEach(function (link) {
+            var content = document.querySelector(link.getAttribute("href"));
+            if (!content.classList.contains("active")) {
+                content.style.display = 'none';
+            }
+        });
+    }, 500);
     sessionStorage.setItem('Tab_Status', tab.getAttribute("href"));
 }
 
@@ -70,18 +82,18 @@ document.addEventListener('DOMContentLoaded', function(){
     var my_tabs_array = document.querySelectorAll(".my-tabs");
     var tabId = sessionStorage.getItem('Tab_Status');
     if (tabId != null){
-    showTab(document.querySelector(".my-tabs a[href='" + tabId + "']").closest(".my-tabs"), document.querySelector(".my-tabs a[href='" + tabId + "']"))
+        showTab(document.querySelector(".my-tabs a[href='" + tabId + "']").closest(".my-tabs"), document.querySelector(".my-tabs a[href='" + tabId + "']"));
     }
     if (document.location.hash!=''){
-        showTab(document.querySelector(".my-tabs a[href='" + document.location.hash + "']").closest(".my-tabs"), document.querySelector(".my-tabs a[href='" + document.location.hash + "']"))
+        showTab(document.querySelector(".my-tabs a[href='" + document.location.hash + "']").closest(".my-tabs"), document.querySelector(".my-tabs a[href='" + document.location.hash + "']"));
     }
     
     my_tabs_array.forEach(function(tabs) {
-        var links = tabs.querySelectorAll(".my-tabs-link > a")
+        var links = tabs.querySelectorAll(".my-tabs-link > a");
         links.forEach(function(link) {
             link.addEventListener("click", function(event){
-                showTab(tabs, this)
-                event.preventDefault()
+                showTab(tabs, this);
+                event.preventDefault();
             });
         });
     });
