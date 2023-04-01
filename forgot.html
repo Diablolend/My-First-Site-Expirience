@@ -1,6 +1,16 @@
 <head>		
     <script src="data/js/jquery-3.6.1.js"></script>
     <script src="data/js/index.js"></script>
+    <script>
+        let videoProgress = document.getElementById('video-progress'),
+            labelVideo = document.getElementById('video-label'),
+            video = document.getElementById('my-video');
+            video.addEventListener('timeupdate', function() {
+        var percent = Math.floor((100 / video.duration) * video.currentTime);
+            videoProgress.value = percent;
+            labelVideo.textContent = percent +'%';
+        });
+    </script>
 </head>
 <style>
     body {
@@ -25,11 +35,19 @@
         position: fixed;
         z-index: 2;
     }
+    progress {
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        margin-right: 10px;
+    }
     </style>
     
     <body>
         <header>
             <input type="button" onclick="history.back()" value="Назад">
+            <progress value="0" max="100" id="video-progress"></progress>
+                <label for="video-progress" id="video-label">0%</label>
         </header>
-        <video id="vid" src="data/video/register.mp4" autoplay="autoplay" muted loop>ЧО НАДА</video>
+        <video src="data/video/register.mp4" id="my-video" autoplay="autoplay" muted loop>ЧО НАДА</video>
     </body>

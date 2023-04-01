@@ -47,7 +47,7 @@ body{
     opacity:0;
     transition:1s;
 }
-/* Ниже код для плавного переключения вкладок */
+/* Ниже css для js скрипта для плавного переключения вкладок */
 .my-tabs-content {
     display: none;
     opacity: 0;
@@ -69,7 +69,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px; /* закругления плашки */
 }
 .body {
-    width: 1200px !important;
+    width: 1200px;
     margin: auto;
     padding: 10px;
     display: grid;
@@ -157,7 +157,6 @@ nav {
     display: flex;
     flex-direction: column;
     float: right;
-    right: 0;
 }
 /* КОНЕЦ ВЕРХНЕЙ ЧАСТИ САЙТА. */
 

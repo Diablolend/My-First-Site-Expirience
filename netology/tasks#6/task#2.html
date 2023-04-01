@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MQ–1.1. Задача 2 — Новинки кино</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <link rel="stylesheet" href="./css/poster-common.css">
+  <link rel="stylesheet" href="./css/poster.css">
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+}
+
+.page {
+  background-image: linear-gradient(to right, #034378, #2d4e68);
+  padding: 50px;
+  min-width: 768px;
+}
+
+.container {
+  max-width: 1000px;
+  min-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.card {
+  float: left;
+  position: relative;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.card__img {
+  max-width: 100%;
+  display: block;
+}
+
+.card__date {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.card__info {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #000000, transparent);
+}
+
+.card__name {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+
+.card {
+  width: 485px;
+  margin-bottom: 3%;
+}
+
+.page .card {
+  width: 48.5%;
+}
+
+.card:nth-child(odd) {
+  margin-right: 1.5%;
+}
+
+.card:nth-child(even) {
+  margin-left: 1.5%;
+}
+
+</style>
+<body>
+<div class="page">
+  <div class="container">
+    <div class="card">
+      <img src="https://netology-code.github.io/mq-homeworks/fluid/poster/img/spiderman.jpg" alt="Постер для фильма Человек-паук: возвращение домой" class="card__img">
+      <span class="card__date">28 Июня 2017</span>
+      <div class="card__info">
+        <span class="card__author">Джон Уоттс</span>
+        <h2 class="card__name">Человек-паук: Возвращение домой</h2>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://netology-code.github.io/mq-homeworks/fluid/poster/img/planet-of-apes.jpg" alt="Постер для фильма Планета обезьян: Война" class="card__img">
+      <span class="card__date">11 Июля 2017</span>
+      <div class="card__info">
+        <span class="card__author">Мэтт Ривз</span>
+        <h2 class="card__name">Планета обезьян: Война</h2>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://netology-code.github.io/mq-homeworks/fluid/poster/img/transformers.jpg" alt="Постер для фильма Трансформеры: Последний рыцарь" class="card__img">
+      <span class="card__date">21 Июня 2017</span>
+      <div class="card__info">
+        <span class="card__author">Майкл Бэй</span>
+        <h2 class="card__name">Трансформеры: Последний рыцарь</h2>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://netology-code.github.io/mq-homeworks/fluid/poster/img/pirates.jpg" alt="Постер для фильма Пираты Карибского моря: Мертвецы не рассказывают сказки" class="card__img">
+      <span class="card__date">11 Мая 2017</span>
+      <div class="card__info">
+        <span class="card__author">Хоаким Роннинг, Эспен Сандберг</span>
+        <h2 class="card__name">Пираты Карибского моря: Мертвецы не рассказывают сказки</h2>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

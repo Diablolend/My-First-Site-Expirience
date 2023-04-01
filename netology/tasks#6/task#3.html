@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MQ–1.1. Задача 3 — Награды</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="stylesheet" href="./css/trophy-common.css">
+    <link rel="stylesheet" href="./css/trophy.css">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+</head>
+<style>
+body {
+  margin: 0;
+  background-color: #f3f3f3;
+  font-family: Roboto, sans-serif;
+  color: #333333;
+}
+
+.container {
+  max-width: 1280px;
+  min-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.trophies::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.trophy {
+  float: left;
+  box-sizing: border-box;
+  padding: 25px 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.19), 0 15px 34px 0 rgba(0, 0, 0, 0.06);
+}
+
+.trophy__img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #ffffff;
+}
+
+.trophy__name {
+  font-weight: 300;
+}
+
+.trophy__year {
+  color: #999999;
+}
+
+
+.trophies {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.trophy {
+  width: 32%;
+  margin-left:34%;
+  margin-right:34%;
+  margin-bottom: 30px;
+}
+</style>
+<body>
+<div class="container">
+    <h2 class="title">Награды, которые мы заслужили</h2>
+    <div class="trophies">
+        <div class="trophy">
+            <img src="https://netology-code.github.io/mq-homeworks/fluid/trophy/img/ru.png" class="trophy__img"
+                 alt="Премия Рунета">
+            <h2 class="trophy__name">Премия Рунета</h2>
+            <span class="trophy__year">2011 год</span>
+        </div>
+        <div class="trophy">
+            <img src="https://netology-code.github.io/mq-homeworks/fluid/trophy/img/gold.png" class="trophy__img"
+                 alt="Премия «Золотой сайт»">
+            <h2 class="trophy__name">Премия «Золотой сайт»</h2>
+            <span class="trophy__year">2013 год</span>
+        </div>
+        <div class="trophy">
+            <img src="https://netology-code.github.io/mq-homeworks/fluid/trophy/img/sk.png" class="trophy__img"
+                 alt="Сколково Инновации">
+            <h2 class="trophy__name">Сколково Инновации</h2>
+            <span class="trophy__year">2017 год</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

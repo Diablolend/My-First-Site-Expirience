@@ -1,28 +1,18 @@
 <style>
-body {
-  margin: 0;
-  background-color: black;
+.parent {  
+  width: 1000px;  
+  box-sizing: border-box;  
+  padding: 50px;
+  background-color: aqua;
 }
-   
-.modal {
-  width: 400px;
-  height: 400px;
-  padding: 20px;
-  position: relative;
-  background-color: green;
-}
-    
-.content {
-  position: fixed;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  background-color: red;
+
+.child {  
+  width: 50%;
+  background-color: brown;
 }
 </style>
 
-<body>
-  <div class="modal">
-    <div class="content"></div>
+<div class="parent">  
+  <div class="child">
   </div>
-</body>
+</div>
