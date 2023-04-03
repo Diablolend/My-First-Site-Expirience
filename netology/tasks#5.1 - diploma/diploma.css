@@ -73,7 +73,7 @@
    }
   
   .header-container, .footer-container {
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -191,7 +191,8 @@
   .article-date-author {
     display: flex;
     gap: 15px;
-    margin-top: 36px;
+    margin-top: 18px;
+    margin-bottom: 36px;
   }
   
   .article-date {
@@ -467,11 +468,6 @@
     margin-top: 60px;
   }
   
-  .categories-list {
-    display: flex;
-    flex-direction: column;
-  }
-  
   .categories-list-items {
     display: flex;
     flex-direction: column;
@@ -523,7 +519,7 @@
     background-color: #f4f7f6;
   }
   
-  .socials_icons {
+  .socials-icons {
     display: flex;
     flex-direction: row;
     gap: 30px;
