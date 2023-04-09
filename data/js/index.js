@@ -36,12 +36,22 @@ function ScrollDown(){
     t=setInterval(function(){if(s<document.documentElement.scrollHeight-document.documentElement.clientHeight)window.scroll(0,s+=5);else clearInterval(t)},5);
 }
 
+// Простой счёт
+function resultation() {
+    let itemsInStock = 18;
+    if (itemsInStock > 0) {
+        console.log(itemsInStock);
+    } else {
+        console.log("Товар закончился");
+    }
+}
+
 // Генерация таблицы
 function CreateTablePreset() {
     document.write ('<table width="100%" border="1">');
-    for (i=1; i<6; i++) {
+    for (i=1; i<11; i++) {
     document.writeln("<tr>");
-        for (j=1; j<6; j++) document.write("<td>" + i + j + "<\/td>");
+        for (j=1; j<11; j++) document.write("<td>" + i + j + "<\/td>");
         document.writeln("<\/tr>");
     }
     document.write ("<\/table> "); 

@@ -156,6 +156,7 @@ nav {
 .functional_buttons {
     display: flex;
     flex-direction: column;
+    padding-left: 0;
     float: right;
 }
 /* КОНЕЦ ВЕРХНЕЙ ЧАСТИ САЙТА. */
