@@ -10998,7 +10998,6 @@ const milkdrop_milkdrop = (state = defaultMilkdropState, action) => {
       return milkdrop_objectSpread(milkdrop_objectSpread({}, state), {}, {
         randomize: !state.randomize
       });
-
     case TOGGLE_PRESET_CYCLING:
       return milkdrop_objectSpread(milkdrop_objectSpread({}, state), {}, {
         cycling: !state.cycling
@@ -16993,7 +16992,6 @@ function Milkdrop({
 
 /* harmony default export */ var MilkdropWindow = (Milkdrop);
 // CONCATENATED MODULE: ./js/components/PlaybackContextMenu.tsx
-
 
 
 
@@ -32533,7 +32531,7 @@ const apev2TagMap = {
     Lyricist: 'lyricist',
     Writer: 'writer',
     Conductor: 'conductor',
-    // 'Performer=artist (instrument)': 'performer:instrument',
+    // 'Performer=artist (instrument)': 'performer:instrument',
     MixArtist: 'remixer',
     Arranger: 'arranger',
     Engineer: 'engineer',
@@ -32736,7 +32734,7 @@ const vorbisTagMap = {
     LYRICIST: "lyricist",
     WRITER: "writer",
     CONDUCTOR: "conductor",
-    // 'PERFORMER=artist (instrument)': 'performer:instrument', // ToDo
+    // 'PERFORMER=artist (instrument)': 'performer:instrument', // ToDo
     REMIXER: "remixer",
     ARRANGER: "arranger",
     ENGINEER: "engineer",
@@ -32779,7 +32777,7 @@ const vorbisTagMap = {
     ACOUSTID_ID: "acoustid_id",
     ACOUSTID_ID_FINGERPRINT: "acoustid_fingerprint",
     MUSICIP_PUID: "musicip_puid",
-    // 'FINGERPRINT=MusicMagic Fingerprint {fingerprint}': 'musicip_fingerprint', // ToDo
+    // 'FINGERPRINT=MusicMagic Fingerprint {fingerprint}': 'musicip_fingerprint', // ToDo
     WEBSITE: "website",
     NOTES: "notes",
     TOTALTRACKS: "totaltracks",
