@@ -100,12 +100,13 @@ ul.ul_nav {
     display: flex;
     flex-direction: row;
     height: 100%;
+    width: 90%;
     list-style: none;
     margin: 0;
     padding: 4px;
     align-items: center;
 }
-ul.ul_nav li {
+ul.ul_nav li, ul.functional_buttons li {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -132,6 +133,7 @@ li.li_logo a {
     height: auto;
 }
 nav {
+    display: flex;
     border-top: 6px solid #505050;
     border-left: 3px solid #707070;
     border-right: 6px solid #505050;
@@ -153,11 +155,14 @@ nav {
     line-height: 16px;
     text-align: center;
 }
-.functional_buttons {
+ul.functional_buttons {
     display: flex;
     flex-direction: column;
+    width: 10%;
     padding-left: 0;
-    float: right;
+    align-items: flex-end;
+    justify-content: center;
+    list-style: none;
 }
 /* КОНЕЦ ВЕРХНЕЙ ЧАСТИ САЙТА. */
 
@@ -282,6 +287,8 @@ article.news {
     background-color: #c7c7c7d7;
     padding: 10px;
     text-align: center;
+    margin-bottom: 10px;
+    height: 100%;
 }
 /* КОНЕЦ БОКОВОЙ ЧАСТИ САЙТА */
 
