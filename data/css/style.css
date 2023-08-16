@@ -100,7 +100,7 @@ ul.ul_nav {
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 90%;
+    width: 100%;
     list-style: none;
     margin: 0;
     padding: 4px;
@@ -158,7 +158,7 @@ nav {
 ul.functional_buttons {
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 90px;
     padding-left: 0;
     align-items: flex-end;
     justify-content: center;
